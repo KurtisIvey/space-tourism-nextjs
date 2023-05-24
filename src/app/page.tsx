@@ -6,7 +6,7 @@ import Link from "next/link";
 export default function Home() {
   return (
     <main className="home">
-      <Navbar />
+      <Navbar activePage={"home"} />
       <section>
         <h2>SO, YOU WANT TO TRAVEL TO</h2>
         <h1>SPACE</h1>

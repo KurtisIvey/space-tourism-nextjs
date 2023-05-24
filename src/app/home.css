@@ -14,7 +14,7 @@ main.home section {
   display: flex;
   flex-direction: column;
   text-align: center;
-  padding: 0 24px;
+  padding: 10px 24px 0 24px;
 }
 main.home section h2 {
   margin: 0;
@@ -49,7 +49,7 @@ main.home section .circleContainer {
   flex-grow: 1;
 }
 main.home section .circle {
-  margin-bottom: 144px;
+  margin-bottom: 152px;
   height: 150px;
   width: 150px;
   border-radius: 50%;
