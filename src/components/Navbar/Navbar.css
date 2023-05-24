@@ -97,6 +97,9 @@ nav .slidingMenu ul li:hover::after {
     width: 48px;
     margin: 24px;
   }
+  nav .slidingMenu {
+    display: none;
+  }
   nav .navContainer {
     display: flex;
     color: white;
@@ -145,5 +148,48 @@ nav .slidingMenu ul li:hover::after {
   }
   nav .navContainer ul li:hover::after {
     width: 100%;
+  }
+}
+@media screen and (min-width: 1440px) {
+  nav .logo {
+    height: 48px;
+    width: 48px;
+    margin: 24px;
+  }
+  nav .navContainer {
+    position: relative;
+    display: flex;
+    -webkit-backdrop-filter: blur(40px);
+            backdrop-filter: blur(40px);
+    background-color: rgba(102, 106, 131, 0.158);
+    height: 96px;
+    width: 830px;
+    justify-content: center;
+    align-items: center;
+  }
+  nav .navContainer #randoLine {
+    border-color: #979797;
+    position: absolute;
+    z-index: 16;
+    width: 473px;
+    left: -440px;
+  }
+  nav .navContainer ul {
+    font-size: 16px;
+    display: flex;
+  }
+  nav .navContainer ul li {
+    position: relative;
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    transition: all 0.3s ease;
+    letter-spacing: 2.7px;
+  }
+  nav .navContainer ul li .largeResNavLink {
+    display: flex;
+  }
+  nav .navContainer ul li .largeResNavLink :first-child {
+    margin-right: 9.6px;
+    font-weight: 800;
   }
 }/*# sourceMappingURL=Navbar.css.map */

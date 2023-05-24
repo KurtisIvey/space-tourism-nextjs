@@ -102,6 +102,9 @@ nav {
             margin: 24px;
             
         }
+        .slidingMenu{
+            display: none;
+        }
         .navContainer{
             display: flex;
             color: white;
@@ -153,6 +156,57 @@ nav {
                   
                   li:hover::after {
                     width: 100%;
+                  }
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    nav{
+        
+        .logo {
+            height: 48px;
+            width: 48px;
+            margin: 24px;
+            
+        }
+        
+        .navContainer{
+            position: relative;
+            display: flex;
+            backdrop-filter: blur(40px); 
+            background-color: rgba(102, 106, 131, 0.158); 
+            height: 96px;
+            width: 830px;
+            justify-content: center;
+            align-items: center;
+            #randoLine{
+                border-color:#979797;
+                position: absolute;
+                z-index: 16;
+                width: 473px;
+                left: -440px;
+                
+            }
+            ul{
+                font-size: 16px;
+                display: flex;
+
+                  li  {
+                    position: relative;
+                    text-decoration: none;
+                    color: rgb(255, 255, 255);
+                    transition: all 0.3s ease;
+                    letter-spacing: 2.7px;
+
+                    .largeResNavLink {
+                        display: flex;
+                        :first-child{
+                            margin-right: 9.6px;
+                            font-weight: 800;
+                        }
+                    }
                   }
             }
         }
