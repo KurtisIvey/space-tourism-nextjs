@@ -1,9 +1,10 @@
+import React from "react";
 import Navbar from "@/components/Navbar/Navbar";
-import Image from "next/image";
+import "./home.css";
 
 export default function Home() {
   return (
-    <main className="">
+    <main className="home">
       <Navbar />
     </main>
   );
