@@ -6,6 +6,7 @@ import "./Navbar.css";
 import logo from "../../assets/shared/logo.svg";
 import hamburgerIcon from "../../assets/shared/icon-hamburger.svg";
 import navMenuCloseIcon from "../../assets/shared/icon-close.svg";
+import Link from "next/link";
 
 type Props = {};
 
@@ -18,30 +19,40 @@ const Navbar = (props: Props) => {
   };
   return (
     <nav className="navbar">
-      <Image className="logo" src={logo} alt="logo" />
+      <Link href={"/"}>
+        <Image className="logo" src={logo} alt="logo" />
+      </Link>
 
       {/* This will have a higher z index to sit on top of the slide out menu div that is positioned absolutely */}
       <Image
-        className="openCloseIcon"
+        className={navbarOpen ? "navMenuCloseIcon" : "hamburgerIcon"}
         src={navbarOpen ? navMenuCloseIcon : hamburgerIcon}
         alt="hamburger menu icon"
         onClick={toggleNavbar}
       />
       <div className={`slidingMenu ${navbarOpen && "navbarOpen"}`}>
         <ul>
-          <li>
-            <div>00</div>
-            <div>HOME</div>
-          </li>
-          <li>
-            <div>01</div> <div>DESTINATION</div>
-          </li>
-          <li>
-            <div>02</div> <div>CREW</div>
-          </li>
-          <li>
-            <div>03</div> <div>TECHNOLOGY</div>
-          </li>
+          <Link href={"/"} className="link">
+            <li>
+              <div>00</div>
+              <div>HOME</div>
+            </li>
+          </Link>
+          <Link href={"/Destination"} className="link">
+            <li>
+              <div>01</div> <div>DESTINATION</div>
+            </li>
+          </Link>
+          <Link href={"/Crew"} className="link">
+            <li>
+              <div>02</div> <div>CREW</div>
+            </li>
+          </Link>
+          <Link href={"/Technology"} className="link">
+            <li>
+              <div>03</div> <div>TECHNOLOGY</div>
+            </li>
+          </Link>
         </ul>
       </div>
     </nav>

@@ -17,7 +17,13 @@ nav.navbar .logo {
   width: 40px;
   margin: 24px;
 }
-nav.navbar .openCloseIcon {
+nav.navbar .hamburgerIcon {
+  height: 21px;
+  width: 24px;
+  margin: 24px;
+  z-index: 3;
+}
+nav.navbar .navMenuCloseIcon {
   height: 24px;
   width: 24px;
   margin: 24px;
@@ -46,17 +52,31 @@ nav.navbar .slidingMenu ul {
   flex-direction: column;
   align-items: flex-start;
   padding: 100px 5vw;
-  font-size: 19px;
+  font-size: 17px;
 }
 nav.navbar .slidingMenu ul li {
-  margin: 13px 0;
+  position: relative;
+  margin: 15px 0;
   width: -moz-fit-content;
   width: fit-content;
   height: 19px;
   display: grid;
   grid-template-columns: 30px auto;
-  letter-spacing: 1px;
+  letter-spacing: 2px;
 }
 nav.navbar .slidingMenu ul li :first-child {
   font-weight: 700;
+}
+nav.navbar .slidingMenu ul li::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 31px;
+  width: 0;
+  height: 2px;
+  background-color: #ffffff;
+  transition: width 0.3s ease-in-out;
+}
+nav.navbar .slidingMenu ul li:hover::after {
+  width: 100%;
 }/*# sourceMappingURL=Navbar.css.map */
