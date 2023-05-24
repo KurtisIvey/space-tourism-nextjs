@@ -2,8 +2,8 @@ main.home {
     box-sizing: border-box;
     height: 100vh;
     width: 100vw;
-    overflow-x: hidden;
+    overflow: hidden;
     background-image: url('../assets/home/background-home-mobile.jpg');
     background-size: cover;
-  background-position: center;
+    background-position: center;
 }

@@ -1,0 +1,70 @@
+/* 
+navmenu openClose icon will need z index higher than slide out menu 
+there will be a div for the slide out menu with a bg filter to add blur of a higher px
+
+
+*/
+nav.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    border: 1px solid red;
+    position: relative;
+    
+    .logo {
+        height: 40px;
+        width: 40px;
+        margin: 24px;
+        
+    }
+
+    .openCloseIcon{
+        height: 24px;
+        width: 24px;
+        margin: 24px;
+        z-index: 3;
+        
+    }
+    .slidingMenu {
+        z-index: 2;
+        position: absolute;
+        color: white;
+        right: -1200px;
+
+        top: 0;
+        height: 100vh;
+        width: 67.2vw;
+        max-width: 400px;
+        backdrop-filter: blur(40px); 
+        background-color: rgba(102, 106, 131, 0.158); 
+        transition: .8s;
+        
+        &.navbarOpen{
+            right: 0px;
+
+        }
+
+        ul{
+            list-style: none;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            padding: 100px 5vw;
+            font-size: 19px;
+
+            li{
+                margin: 13px 0;
+                width: fit-content;
+                height: 19px;
+                display: grid;
+                grid-template-columns: 30px auto;
+                letter-spacing: 1px;
+                :first-child{
+                    font-weight: 700;
+                }
+            }
+        }
+    }
+    
+}
