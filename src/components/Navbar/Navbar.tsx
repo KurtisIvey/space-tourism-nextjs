@@ -96,7 +96,7 @@ const Navbar = ({ activePage }: Props) => {
                   <div>HOME</div>
                 </div>
               ) : (
-                "TECHNOLOGY"
+                "HOME"
               )}
             </li>
           </Link>
@@ -108,7 +108,7 @@ const Navbar = ({ activePage }: Props) => {
                   <div>DESTINATION</div>
                 </div>
               ) : (
-                "TECHNOLOGY"
+                "DESTINATION"
               )}
             </li>
           </Link>
