@@ -9,7 +9,6 @@ nav.navbar {
     justify-content: space-between;
     align-items: center;
     width: 100%;
-    border: 1px solid red;
     position: relative;
     
     .logo {
@@ -49,12 +48,14 @@ nav.navbar {
             right: 0px;
         }
         ul{
+            font-family: 'Barlow Condensed', sans-serif;
+
             list-style: none;
             display: flex;
             flex-direction: column;
             align-items: flex-start;
             padding: 100px 5vw;
-            font-size: 17px;
+            font-size: 16px;
 
             li{
                 position: relative;

@@ -9,7 +9,6 @@ nav.navbar {
   justify-content: space-between;
   align-items: center;
   width: 100%;
-  border: 1px solid red;
   position: relative;
 }
 nav.navbar .logo {
@@ -47,12 +46,13 @@ nav.navbar .slidingMenu.navbarOpen {
   right: 0px;
 }
 nav.navbar .slidingMenu ul {
+  font-family: "Barlow Condensed", sans-serif;
   list-style: none;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   padding: 100px 5vw;
-  font-size: 17px;
+  font-size: 16px;
 }
 nav.navbar .slidingMenu ul li {
   position: relative;
