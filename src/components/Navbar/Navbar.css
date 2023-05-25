@@ -22,31 +22,30 @@ nav .hamburgerIcon {
   height: 21px;
   width: 24px;
   margin: 24px;
-  z-index: 3;
+  z-index: 6;
 }
 nav .navMenuCloseIcon {
   cursor: pointer;
   height: 24px;
   width: 24px;
   margin: 24px;
-  z-index: 3;
+  z-index: 6;
 }
 nav .navContainer {
   display: none;
 }
 nav .slidingMenu {
-  z-index: 2;
   position: absolute;
   color: white;
-  right: -1200px;
+  right: -300px;
   top: 0;
   height: 100vh;
-  width: 67.2vw;
-  max-width: 400px;
+  width: 254px;
   -webkit-backdrop-filter: blur(44px);
           backdrop-filter: blur(44px);
-  background-color: rgba(102, 106, 131, 0.158);
+  background-color: rgba(151, 151, 151, 0.2);
   transition: 0.8s;
+  z-index: 5;
 }
 nav .slidingMenu.navbarOpen {
   right: 0px;

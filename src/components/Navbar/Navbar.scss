@@ -1,3 +1,4 @@
+@import '../../variables.scss';
 /* 
 navmenu openClose icon will need z index higher than slide out menu 
 there will be a div for the slide out menu with a bg filter to add blur of a higher px
@@ -23,30 +24,30 @@ nav {
         height: 21px;
         width: 24px;
         margin: 24px;
-        z-index: 3;
+        z-index: 6;
     }
     .navMenuCloseIcon{
         cursor: pointer;
         height: 24px;
         width: 24px;
         margin: 24px;
-        z-index: 3;  
+        z-index: 6;  
     }
     .navContainer{
         display: none;
     }
     .slidingMenu {
-        z-index: 2;
         position: absolute;
         color: white;
-        right: -1200px;
+        right: -300px;
         top: 0;
         height: 100vh;
-        width: 67.2vw;
-        max-width: 400px;
+        width: 254px;
+        
         backdrop-filter: blur(44px); 
-        background-color: rgba(102, 106, 131, 0.158); 
+        background-color: $darkGreyAlpha; 
         transition: .8s;
+        z-index: 5;
         
         &.navbarOpen{
             right: 0px;
