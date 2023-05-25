@@ -100,56 +100,71 @@ main.home section .circleContainer .circle:hover .hoverCircle {
 
 @media screen and (min-width: 768px) {
   main.home {
-    font-family: "Barlow Condensed", sans-serif;
-    box-sizing: border-box;
-    height: 100vh;
-    width: 100%;
-    overflow: hidden;
     background-image: url("../assets/home/background-home-tablet.jpg");
-    background-size: cover;
-    background-position: center;
   }
-  main.home section {
-    height: 100%;
-    color: white;
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    padding: 10px 24px 0 24px;
+  main.home section .textContainer {
+    margin-top: 93px;
+    width: 450px;
+    height: 334px;
   }
-  main.home section h2 {
+  main.home section .textContainer h2 {
+    margin: 0;
+    padding: 0;
+    font-weight: 200;
     font-size: 20px;
     letter-spacing: 3.38px;
-    margin-bottom: 14px;
+    margin-bottom: 10px;
   }
-  main.home section h1 {
+  main.home section .textContainer h1 {
+    font-family: "Bellefair", serif;
+    margin: 0;
+    padding: 0;
     font-size: 150px;
-    margin-bottom: 25px;
+    font-weight: 300;
+    margin-bottom: 12px;
   }
-  main.home section p {
+  main.home section .textContainer p {
+    color: white;
+    font-family: "Barlow", sans-serif;
+    font-weight: 300;
     font-size: 16px;
-    line-height: 25px;
-    padding: 5px;
+    line-height: 31px;
+    padding: 0px;
   }
   main.home section .circleContainer {
     height: -moz-fit-content;
     height: fit-content;
     display: flex;
-    height: 100%;
-    align-items: flex-end;
-    justify-content: center;
+    width: 100%;
     flex-grow: 1;
+    position: relative;
+    align-items: flex-end;
+    z-index: 3;
   }
-  main.home section .circle {
-    margin-bottom: 152px;
-    height: 242px;
-    width: 242px;
+  main.home section .circleContainer .circle {
+    margin-bottom: 200px;
+    margin-left: auto;
+    margin-right: auto;
+    color: black;
     display: flex;
     align-items: center;
     justify-content: center;
+    position: relative;
   }
-  main.home section .circle :first-child {
+  main.home section .circleContainer .circle .explore {
+    height: 242px;
+    width: 242px;
     font-size: 32px;
     letter-spacing: 2px;
+    z-index: 2;
+  }
+  main.home section .circleContainer .hoverCircle {
+    height: 210px;
+    width: 210px;
+  }
+  main.home section .circleContainer .circle:hover .hoverCircle {
+    height: 300px;
+    width: 300px;
+    opacity: 1;
   }
 }/*# sourceMappingURL=home.css.map */

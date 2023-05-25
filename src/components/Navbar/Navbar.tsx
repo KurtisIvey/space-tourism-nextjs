@@ -1,6 +1,6 @@
 // must have use client otherwise will receive error because this is a client component and not server component
 "use client";
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useState, useCallback } from "react";
 import Image from "next/image";
 import "./Navbar.css";
 import logo from "../../assets/shared/logo.svg";
@@ -37,9 +37,9 @@ const Navbar = ({ activePage }: Props) => {
   }, []);
 
   // open and closes side navbar at mobile res
-  const toggleNavbar = () => {
-    setNavbarOpen(!navbarOpen);
-  };
+  const toggleNavbar = useCallback(() => {
+    setNavbarOpen((prevState) => !prevState);
+  }, []);
   return (
     <nav>
       <Link href={"/"}>
