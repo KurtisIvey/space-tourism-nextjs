@@ -61,34 +61,7 @@ const Navbar = ({ activePage }: Props) => {
         easier to have two seperate navbars due to sliding window on mobile res. 
         ternary operator to display mobile navbar on lower res and tablet and larger on 768px+ width 
       */}
-      {windowWidth <= 768 ? (
-        <div className={`slidingMenu ${navbarOpen && "navbarOpen"}`}>
-          {/* sliding menu for mobile */}
-          <ul>
-            <Link href={"/"} className="link">
-              <li>
-                <div>00</div>
-                <div>HOME</div>
-              </li>
-            </Link>
-            <Link href={"/Destination"} className="link">
-              <li>
-                <div>01</div> <div>DESTINATION</div>
-              </li>
-            </Link>
-            <Link href={"/Crew"} className="link">
-              <li>
-                <div>02</div> <div>CREW</div>
-              </li>
-            </Link>
-            <Link href={"/Technology"} className="link">
-              <li>
-                <div>03</div> <div>TECHNOLOGY</div>
-              </li>
-            </Link>
-          </ul>
-        </div>
-      ) : (
+      {windowWidth >= 768 ? (
         <div className="navContainer">
           {/* tablet and larger res navbar */}
           {/* rando line on desktop view */}
@@ -141,6 +114,34 @@ const Navbar = ({ activePage }: Props) => {
                 ) : (
                   "TECHNOLOGY"
                 )}
+              </li>
+            </Link>
+          </ul>
+        </div>
+      ) : (
+        <div className={`slidingMenu ${navbarOpen && "navbarOpen"}`}>
+          {/* sliding menu for mobile */}
+          <ul>
+            <Link href={"/"} className="link">
+              {/* ternary for active page to trigger conditional class to show active page underline */}
+              <li className={activePage === "home" ? "activePage" : ""}>
+                <div>00</div>
+                <div>HOME</div>
+              </li>
+            </Link>
+            <Link href={"/Destination"} className="link">
+              <li className={activePage === "destination" ? "activePage" : ""}>
+                <div>01</div> <div>DESTINATION</div>
+              </li>
+            </Link>
+            <Link href={"/Crew"} className="link">
+              <li className={activePage === "crew" ? "activePage" : ""}>
+                <div>02</div> <div>CREW</div>
+              </li>
+            </Link>
+            <Link href={"/Technology"} className="link">
+              <li className={activePage === "technology" ? "activePage" : ""}>
+                <div>03</div> <div>TECHNOLOGY</div>
               </li>
             </Link>
           </ul>
