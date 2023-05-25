@@ -57,87 +57,95 @@ const Navbar = ({ activePage }: Props) => {
         alt="hamburger menu icon"
         onClick={toggleNavbar}
       />
-      {/* sliding menu for mobile */}
-      <div className={`slidingMenu ${navbarOpen && "navbarOpen"}`}>
-        <ul>
-          <Link href={"/"} className="link">
-            <li>
-              <div>00</div>
-              <div>HOME</div>
-            </li>
-          </Link>
-          <Link href={"/Destination"} className="link">
-            <li>
-              <div>01</div> <div>DESTINATION</div>
-            </li>
-          </Link>
-          <Link href={"/Crew"} className="link">
-            <li>
-              <div>02</div> <div>CREW</div>
-            </li>
-          </Link>
-          <Link href={"/Technology"} className="link">
-            <li>
-              <div>03</div> <div>TECHNOLOGY</div>
-            </li>
-          </Link>
-        </ul>
-      </div>
-      {/* rando line on desktop view */}
-      {/* tablet res + nav menu */}
-      <div className="navContainer">
-        {windowWidth >= 1440 && <hr id="randoLine" />}
-        <ul>
-          <Link href={"/"} className="link">
-            <li className={activePage === "home" ? "activePage" : ""}>
-              {windowWidth >= 1440 ? (
-                <div className="largeResNavLink">
-                  <div>00</div>
-                  <div>HOME</div>
-                </div>
-              ) : (
-                "HOME"
-              )}
-            </li>
-          </Link>
-          <Link href={"/Destination"} className="link">
-            <li className={activePage === "destination" ? "activePage" : ""}>
-              {windowWidth >= 1440 ? (
-                <div className="largeResNavLink">
-                  <div>01</div>
-                  <div>DESTINATION</div>
-                </div>
-              ) : (
-                "DESTINATION"
-              )}
-            </li>
-          </Link>
-          <Link href={"/Crew"} className="link">
-            <li className={activePage === "crew" ? "activePage" : ""}>
-              {windowWidth >= 1440 ? (
-                <div className="largeResNavLink">
-                  <div>02</div>
-                  <div>CREW</div>
-                </div>
-              ) : (
-                "CREW"
-              )}
-            </li>
-          </Link>
-          <Link href={"/Technology"} className="link">
-            <li className={activePage === "technology" ? "activePage" : ""}>
-              {windowWidth >= 1440 ? (
-                <div className="largeResNavLink">
-                  <div>03</div>
-                  <div>TECHNOLOGY</div>
-                </div>
-              ) : (
-                "TECHNOLOGY"
-              )}
-            </li>
-          </Link>
-        </ul>
-      </div>
+      {/* 
+        easier to have two seperate navbars due to sliding window on mobile res. 
+        ternary operator to display mobile navbar on lower res and tablet and larger on 768px+ width 
+      */}
+      {windowWidth <= 768 ? (
+        <div className={`slidingMenu ${navbarOpen && "navbarOpen"}`}>
+          {/* sliding menu for mobile */}
+          <ul>
+            <Link href={"/"} className="link">
+              <li>
+                <div>00</div>
+                <div>HOME</div>
+              </li>
+            </Link>
+            <Link href={"/Destination"} className="link">
+              <li>
+                <div>01</div> <div>DESTINATION</div>
+              </li>
+            </Link>
+            <Link href={"/Crew"} className="link">
+              <li>
+                <div>02</div> <div>CREW</div>
+              </li>
+            </Link>
+            <Link href={"/Technology"} className="link">
+              <li>
+                <div>03</div> <div>TECHNOLOGY</div>
+              </li>
+            </Link>
+          </ul>
+        </div>
+      ) : (
+        <div className="navContainer">
+          {/* tablet and larger res navbar */}
+          {/* rando line on desktop view */}
+          {windowWidth >= 1440 && <hr id="randoLine" />}
+          <ul>
+            <Link href={"/"} className="link">
+              <li className={activePage === "home" ? "activePage" : ""}>
+                {/* ternary  to display ## text on larger res */}
+                {windowWidth >= 1440 ? (
+                  <div className="largeResNavLink">
+                    <div>00</div>
+                    <div>HOME</div>
+                  </div>
+                ) : (
+                  "HOME"
+                )}
+              </li>
+            </Link>
+            <Link href={"/Destination"} className="link">
+              <li className={activePage === "destination" ? "activePage" : ""}>
+                {windowWidth >= 1440 ? (
+                  <div className="largeResNavLink">
+                    <div>01</div>
+                    <div>DESTINATION</div>
+                  </div>
+                ) : (
+                  "DESTINATION"
+                )}
+              </li>
+            </Link>
+            <Link href={"/Crew"} className="link">
+              <li className={activePage === "crew" ? "activePage" : ""}>
+                {windowWidth >= 1440 ? (
+                  <div className="largeResNavLink">
+                    <div>02</div>
+                    <div>CREW</div>
+                  </div>
+                ) : (
+                  "CREW"
+                )}
+              </li>
+            </Link>
+            <Link href={"/Technology"} className="link">
+              <li className={activePage === "technology" ? "activePage" : ""}>
+                {windowWidth >= 1440 ? (
+                  <div className="largeResNavLink">
+                    <div>03</div>
+                    <div>TECHNOLOGY</div>
+                  </div>
+                ) : (
+                  "TECHNOLOGY"
+                )}
+              </li>
+            </Link>
+          </ul>
+        </div>
+      )}
     </nav>
   );
 };
