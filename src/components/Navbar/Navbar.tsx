@@ -9,12 +9,16 @@ import navMenuCloseIcon from "../../assets/shared/icon-close.svg";
 import Link from "next/link";
 
 type Props = {
+  // receive string props through page navbar is imported in to conditionally render line underneath indicating active page
   activePage: string;
 };
 
 const Navbar = ({ activePage }: Props) => {
   const [windowWidth, setWindowWidth] = useState<number>(0);
+  // state for managing navbar menu on smaller res to trigger ternary for img to open or close
+  const [navbarOpen, setNavbarOpen] = useState<boolean>(false);
 
+  // detects screen width so ternary can be used to render mobile navbar or (tablet res and bigger) navbar
   useEffect(() => {
     const handleResize = () => {
       setWindowWidth(window.innerWidth);
@@ -32,12 +36,9 @@ const Navbar = ({ activePage }: Props) => {
     };
   }, []);
 
-  // state for managing navbar menu on smaller res to trigger ternary for img to open or close
-  const [navbarOpen, setNavbarOpen] = useState<boolean>(false);
-  console.log(activePage);
+  // open and closes side navbar at mobile res
   const toggleNavbar = () => {
     setNavbarOpen(!navbarOpen);
-    console.log(windowWidth);
   };
   return (
     <nav>
