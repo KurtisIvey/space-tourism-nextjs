@@ -19,7 +19,7 @@ const Navbar = ({ activePage }: Props) => {
   const [navbarOpen, setNavbarOpen] = useState<boolean>(false);
 
   useEffect(() => {
-    // monitors window width to auto close sidebar so its not automatically open
+    // monitors window width to auto close sidebar so its not automatically open one switching from mobile to tablet or vise versa
     if (windowWidth >= 768 && navbarOpen === true) {
       setNavbarOpen(false);
     }

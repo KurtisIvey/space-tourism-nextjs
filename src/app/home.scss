@@ -191,5 +191,105 @@ main.home {
 }
 
 @media screen and (min-width: 1440px) {
-    
+    main.home {
+        font-family: 'Barlow Condensed', sans-serif;
+        box-sizing: border-box;
+        height: 100vh;
+        width: 100%;
+        overflow: hidden;
+        background-image: url('../assets/home/background-home-desktop.jpg');
+        background-size: cover;
+        background-position: center;
+      
+        section {
+          height: 100%;
+          color: white;
+          display: flex;
+          flex-direction: row;
+          text-align: center;
+          justify-content: center;
+          align-items: center;
+          padding: 0px;
+      
+          .textContainer {
+            margin-right: 165px;
+            width: 327px;
+            height: 276px;
+      
+            h2 {
+              margin: 0;
+              padding: 0;
+              font-weight: 200;
+              font-size: 28px;
+              letter-spacing: 4.72px;
+              margin-bottom: 22px;
+            }
+      
+            h1 {
+              font-family: 'Bellefair', serif;
+              margin: 0;
+              padding: 0;
+              font-size: 150px;
+              font-weight: 300;
+              margin-bottom: 23px;
+            }
+      
+            p {
+              color: white;
+              font-family: 'Barlow', sans-serif;
+              font-weight: 300;
+              font-size: 18px;
+              line-height: 25px;
+              padding: 5px;
+            }
+          }
+      
+          .circleContainer {
+            height: fit-content;
+            display: flex;
+            width: auto;
+            flex-grow: 0;
+            position: relative;
+            align-items: flex-end;
+            z-index: 3;
+            margin-left: 165px;
+          
+            .circle {
+              margin: 0;
+              color: black;
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              position: relative;
+          
+              .explore {
+                height: 274px;
+                width: 274px;
+                font-size: 32px;
+                letter-spacing: 2px;
+                z-index: 2;
+              }
+            }
+            
+            .hoverCircle {
+              position: absolute;
+              height: 250px;
+              width: 250px;
+              border-radius: 50%;
+              background-color: $darkGrey;
+              opacity: 1;
+              margin-left: auto;
+              margin-right: auto;
+              z-index: 1;
+              transition: .4s ease-in-out;
+            }
+            
+            .circle:hover .hoverCircle {
+              height: 340px;
+              width: 340px;
+              opacity: 1;
+            }
+          }
+        }
+      }
 }
