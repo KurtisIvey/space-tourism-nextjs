@@ -18,6 +18,13 @@ const Navbar = ({ activePage }: Props) => {
   // state for managing navbar menu on smaller res to trigger ternary for img to open or close
   const [navbarOpen, setNavbarOpen] = useState<boolean>(false);
 
+  useEffect(() => {
+    // monitors window width to auto close sidebar so its not automatically open
+    if (windowWidth >= 768 && navbarOpen === true) {
+      setNavbarOpen(false);
+    }
+  }, [windowWidth, navbarOpen]);
+
   // detects screen width so ternary can be used to render mobile navbar or (tablet res and bigger) navbar
   useEffect(() => {
     const handleResize = () => {
