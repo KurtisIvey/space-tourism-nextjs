@@ -206,15 +206,15 @@ main.home {
           color: white;
           display: flex;
           flex-direction: row;
-          text-align: center;
+          text-align: start;
           justify-content: center;
           align-items: center;
           padding: 0px;
       
           .textContainer {
             margin-right: 165px;
-            width: 327px;
-            height: 276px;
+            width: 450px;
+            height: 382px;
       
             h2 {
               margin: 0;
@@ -239,7 +239,7 @@ main.home {
               font-family: 'Barlow', sans-serif;
               font-weight: 300;
               font-size: 18px;
-              line-height: 25px;
+              line-height: 32px;
               padding: 5px;
             }
           }
@@ -252,7 +252,8 @@ main.home {
             position: relative;
             align-items: flex-end;
             z-index: 3;
-            margin-left: 165px;
+            margin-left: 220px;
+            margin-top: 176px;
           
             .circle {
               margin: 0;

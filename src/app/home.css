@@ -184,15 +184,15 @@ main.home section .circleContainer .circle:hover .hoverCircle {
     color: white;
     display: flex;
     flex-direction: row;
-    text-align: center;
+    text-align: start;
     justify-content: center;
     align-items: center;
     padding: 0px;
   }
   main.home section .textContainer {
     margin-right: 165px;
-    width: 327px;
-    height: 276px;
+    width: 450px;
+    height: 382px;
   }
   main.home section .textContainer h2 {
     margin: 0;
@@ -215,7 +215,7 @@ main.home section .circleContainer .circle:hover .hoverCircle {
     font-family: "Barlow", sans-serif;
     font-weight: 300;
     font-size: 18px;
-    line-height: 25px;
+    line-height: 32px;
     padding: 5px;
   }
   main.home section .circleContainer {
@@ -227,7 +227,8 @@ main.home section .circleContainer .circle:hover .hoverCircle {
     position: relative;
     align-items: flex-end;
     z-index: 3;
-    margin-left: 165px;
+    margin-left: 220px;
+    margin-top: 176px;
   }
   main.home section .circleContainer .circle {
     margin: 0;
