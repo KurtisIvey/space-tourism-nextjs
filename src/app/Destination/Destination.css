@@ -130,6 +130,7 @@ main.destination section .metricsBigContainer .metricContainer div {
     align-items: flex-start;
   }
   main.destination section {
+    height: 100%;
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -144,7 +145,7 @@ main.destination section .metricsBigContainer .metricContainer div {
     color: white;
     margin-bottom: 70px;
     margin-left: 38.5px;
-    margin-top: 3.3vh;
+    margin-top: -25px;
   }
   main.destination section h1 span {
     font-weight: 700;
