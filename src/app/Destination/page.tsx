@@ -58,42 +58,44 @@ const Destination = (props: Props) => {
             height={300}
           />
         )}
-        <ul>
-          <li
-            onClick={() => setDataIndex(0)}
-            className={dataIndex === 0 ? "activePlanet" : ""}
-          >
-            MOON
-          </li>
-          <li
-            onClick={() => setDataIndex(1)}
-            className={dataIndex === 1 ? "activePlanet" : ""}
-          >
-            MARS
-          </li>
-          <li
-            onClick={() => setDataIndex(2)}
-            className={dataIndex === 2 ? "activePlanet" : ""}
-          >
-            EUROPA
-          </li>
-          <li
-            onClick={() => setDataIndex(3)}
-            className={dataIndex === 3 ? "activePlanet" : ""}
-          >
-            TITAN
-          </li>
-        </ul>
-        <h2>{destinationInfo[dataIndex].name}</h2>
-        <p>{destinationInfo[dataIndex].description}</p>
-        <div className="metricsBigContainer">
-          <div className="metricContainer">
-            <h3>AVG. DISTANCE</h3>
-            <div>{destinationInfo[dataIndex].distance}</div>
-          </div>
-          <div className="metricContainer">
-            <h3>EST. TRAVEL TIME</h3>
-            <div>{destinationInfo[dataIndex].travel}</div>
+        <div className="descriptorsContainer">
+          <ul>
+            <li
+              onClick={() => setDataIndex(0)}
+              className={dataIndex === 0 ? "activePlanet" : ""}
+            >
+              MOON
+            </li>
+            <li
+              onClick={() => setDataIndex(1)}
+              className={dataIndex === 1 ? "activePlanet" : ""}
+            >
+              MARS
+            </li>
+            <li
+              onClick={() => setDataIndex(2)}
+              className={dataIndex === 2 ? "activePlanet" : ""}
+            >
+              EUROPA
+            </li>
+            <li
+              onClick={() => setDataIndex(3)}
+              className={dataIndex === 3 ? "activePlanet" : ""}
+            >
+              TITAN
+            </li>
+          </ul>
+          <h2>{destinationInfo[dataIndex].name}</h2>
+          <p>{destinationInfo[dataIndex].description}</p>
+          <div className="metricsBigContainer">
+            <div className="metricContainer">
+              <h3>AVG. DISTANCE</h3>
+              <div>{destinationInfo[dataIndex].distance}</div>
+            </div>
+            <div className="metricContainer">
+              <h3>EST. TRAVEL TIME</h3>
+              <div>{destinationInfo[dataIndex].travel}</div>
+            </div>
           </div>
         </div>
       </section>
