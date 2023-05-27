@@ -1,1 +1,89 @@
-/*# sourceMappingURL=Destination.css.map */
+main.destination {
+  font-family: "Barlow Condensed", sans-serif;
+  box-sizing: border-box;
+  height: 100vh;
+  width: 100%;
+  overflow-x: hidden;
+  background-image: url("../../assets/destination/background-destination-mobile.jpg");
+  background-size: cover;
+  background-position: center;
+}
+main.destination section {
+  color: white;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+}
+main.destination section h1 {
+  font-weight: 400;
+  font-size: 16px;
+  letter-spacing: 2.7px;
+  color: white;
+  margin-bottom: 30px;
+}
+main.destination section h1 span {
+  font-weight: 700;
+  color: #979797;
+  margin-right: 10px;
+}
+main.destination section .planetImage {
+  width: 170px;
+  height: 170px;
+  margin-bottom: 25px;
+}
+main.destination section ul {
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  font-size: 14px;
+  letter-spacing: 2.36px;
+  margin-bottom: 30px;
+}
+main.destination section ul li {
+  cursor: pointer;
+}
+main.destination section h2 {
+  font-family: "Bellefair", serif;
+  font-weight: 300;
+  font-size: 56px;
+  text-transform: uppercase;
+  margin-bottom: 0;
+}
+main.destination section p {
+  width: 327px;
+  height: 125px;
+  font-family: "Barlow", sans-serif;
+  font-size: 15px;
+  font-weight: 200;
+  line-height: 23px;
+}
+main.destination section hr {
+  border: none;
+  height: 0.08rem;
+  background-color: rgba(151, 151, 151, 0.2);
+  width: 327px;
+  margin: 27px 0;
+}
+main.destination section .metricContainer {
+  width: 216px;
+  height: 61px;
+  margin-bottom: 32px;
+}
+main.destination section .metricContainer h3 {
+  font-family: "Barlow Condensed", sans-serif;
+  font-weight: 300;
+  margin: 0;
+  margin-bottom: 12px;
+  padding: 0;
+  font-size: 14px;
+  letter-spacing: 2.36px;
+}
+main.destination section .metricContainer div {
+  font-size: 28px;
+  font-family: "Bellefair", serif;
+  text-transform: uppercase;
+  font-weight: 300;
+}/*# sourceMappingURL=Destination.css.map */
