@@ -86,14 +86,15 @@ const Destination = (props: Props) => {
         </ul>
         <h2>{destinationInfo[dataIndex].name}</h2>
         <p>{destinationInfo[dataIndex].description}</p>
-        <hr />
-        <div className="metricContainer">
-          <h3>AVG. DISTANCE</h3>
-          <div>{destinationInfo[dataIndex].distance}</div>
-        </div>
-        <div className="metricContainer">
-          <h3>EST. TRAVEL TIME</h3>
-          <div>{destinationInfo[dataIndex].travel}</div>
+        <div className="metricsBigContainer">
+          <div className="metricContainer">
+            <h3>AVG. DISTANCE</h3>
+            <div>{destinationInfo[dataIndex].distance}</div>
+          </div>
+          <div className="metricContainer">
+            <h3>EST. TRAVEL TIME</h3>
+            <div>{destinationInfo[dataIndex].travel}</div>
+          </div>
         </div>
       </section>
     </main>
