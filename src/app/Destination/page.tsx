@@ -41,19 +41,19 @@ const Destination = (props: Props) => {
           </li>
           <li
             onClick={() => setDataIndex(1)}
-            className={dataIndex === 0 ? "activePlanet" : ""}
+            className={dataIndex === 1 ? "activePlanet" : ""}
           >
             MARS
           </li>
           <li
             onClick={() => setDataIndex(2)}
-            className={dataIndex === 0 ? "activePlanet" : ""}
+            className={dataIndex === 2 ? "activePlanet" : ""}
           >
             EUROPA
           </li>
           <li
             onClick={() => setDataIndex(3)}
-            className={dataIndex === 0 ? "activePlanet" : ""}
+            className={dataIndex === 3 ? "activePlanet" : ""}
           >
             TITAN
           </li>
