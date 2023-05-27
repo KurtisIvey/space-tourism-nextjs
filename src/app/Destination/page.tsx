@@ -13,6 +13,16 @@ const Destination = (props: Props) => {
   // sets index to load destination info data as it's an array
   const [dataIndex, setDataIndex] = useState(0);
 
+  const supportsWebp = checkWebpSupport();
+
+  function checkWebpSupport() {
+    const elem = document.createElement("canvas");
+    if (elem.getContext && elem.getContext("2d")) {
+      return elem.toDataURL("image/webp").indexOf("data:image/webp") === 0;
+    }
+    return false;
+  }
+
   const dummyData = {
     name: "Moon",
     images: {
@@ -31,7 +41,23 @@ const Destination = (props: Props) => {
         <h1>
           <span>01</span> PICK YOUR DESTINATION
         </h1>
-        <Image className="planetImage" src={moonImage} alt="moon " />
+        {supportsWebp ? (
+          <Image
+            className="planetImage"
+            src={destinationInfo[dataIndex].images.webp}
+            alt="moon"
+            width={500}
+            height={300}
+          />
+        ) : (
+          <Image
+            className="planetImage"
+            src={destinationInfo[dataIndex].images.png}
+            alt="moon"
+            width={500}
+            height={300}
+          />
+        )}
         <ul>
           <li
             onClick={() => setDataIndex(0)}

@@ -9,11 +9,12 @@ main.destination {
     background-image: url('../../assets/destination/background-destination-mobile.jpg');
     background-size: cover;
     background-position: center;
-    
+    display: grid;
+    grid-template-rows: auto 1fr;
     
     section {
         color: white;
-
+        
         display: flex;
         flex-direction: column;
         text-align: center;
