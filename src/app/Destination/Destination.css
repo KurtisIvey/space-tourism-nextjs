@@ -236,9 +236,9 @@ main.destination section .metricsBigContainer .metricContainer div {
     grid-column: 1/2;
     width: 445px;
     height: 445px;
-    margin-bottom: 0px;
+    margin-bottom: -38.5px;
     margin-left: 64px;
-    margin-right: 100px;
+    margin-right: 77.5px;
   }
   main.destination section .descriptorsContainer {
     flex-direction: column;
@@ -248,7 +248,7 @@ main.destination section .metricsBigContainer .metricContainer div {
     grid-column: 2/3;
     width: 445px;
     height: 472px;
-    margin-left: 100px;
+    margin-left: 79px;
   }
   main.destination section .descriptorsContainer ul {
     margin-bottom: 15px;
