@@ -11,6 +11,7 @@ const Crew = (props: Props) => {
   const [index, setIndex] = useState<number>(0);
   const supportsWebp = checkWebpSupport();
   const [activeCrew, setActiveCrew] = useState<string>("douglas");
+
   useEffect(() => {
     // sets activeCrew to then be passed through into classname to control custom width
     const detailsContainerWidth = () => {

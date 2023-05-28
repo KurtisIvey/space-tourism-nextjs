@@ -162,6 +162,9 @@ nav .slidingMenu ul li:hover::after {
   }
 }
 @media screen and (min-width: 1440px) {
+  nav {
+    margin-top: 40px;
+  }
   nav .logo {
     height: 48px;
     width: 48px;

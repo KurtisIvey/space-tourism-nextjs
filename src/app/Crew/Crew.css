@@ -106,16 +106,7 @@ main.crew section div.detailsContainer div.textContainer p {
 
 @media screen and (min-width: 768px) {
   main.crew {
-    font-family: "Barlow Condensed", sans-serif;
-    box-sizing: border-box;
-    height: 100vh;
-    width: 100%;
-    overflow-x: hidden;
     background-image: url("../../assets/crew/background-crew-tablet.jpg");
-    background-size: cover;
-    background-position: center;
-    display: grid;
-    grid-template-rows: auto 1fr;
   }
   main.crew section {
     display: grid;
@@ -130,7 +121,6 @@ main.crew section div.detailsContainer div.textContainer p {
     text-align: center;
     margin-right: 480px;
     grid-row: 1/2;
-    font-weight: 400;
     font-size: 20px;
     letter-spacing: 3.38px;
     margin-top: 25px;
@@ -150,10 +140,6 @@ main.crew section div.detailsContainer div.textContainer p {
     padding-top: 20px;
     margin-bottom: 0;
     border-bottom: 0.25px solid rgba(151, 151, 151, 0.2);
-  }
-  main.crew section div.imageContainer .crewPhoto {
-    height: 100%;
-    width: auto;
   }
   main.crew section div.detailsContainer {
     margin-left: auto;
@@ -210,5 +196,114 @@ main.crew section div.detailsContainer div.textContainer p {
   }
   main.crew section div.detailsContainer.ano {
     width: 536px;
+  }
+}
+@media screen and (min-width: 1440px) {
+  main.crew {
+    background-image: url("../../assets/crew/background-crew-desktop.jpg");
+  }
+  main.crew section {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 70px auto 1fr;
+    align-items: flex-start;
+    justify-content: center;
+    width: 100%;
+    max-width: 1440px;
+    margin-top: 0;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  main.crew section h1 {
+    grid-row: 2/3;
+    grid-column: 1/2;
+    font-size: 28px;
+    letter-spacing: 4.72px;
+    margin-top: 0;
+    margin-right: 0;
+    margin-bottom: 0;
+    justify-self: flex-start;
+    margin-left: 140px;
+  }
+  main.crew section h1 span {
+    font-weight: 700;
+    margin-right: 10px;
+  }
+  main.crew section div.imageContainer {
+    grid-row: 2/4;
+    grid-column: 2/3;
+    width: auto;
+    height: -moz-fit-content;
+    height: fit-content;
+    display: flex;
+    align-self: flex-end;
+    justify-content: center;
+    padding-top: 0px;
+    margin-bottom: 0;
+    border-bottom: 0.25px solid rgba(151, 151, 151, 0.2);
+  }
+  main.crew section div.detailsContainer {
+    margin-left: auto;
+    margin-right: auto;
+    grid-row: 3/4;
+    grid-column: 1/2;
+    height: auto;
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: start;
+    justify-self: center;
+  }
+  main.crew section div.detailsContainer ul {
+    list-style: none;
+    display: flex;
+    width: 132px;
+    justify-content: space-between;
+    margin-bottom: 0;
+    margin-top: 10rem;
+  }
+  main.crew section div.detailsContainer ul li {
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background-color: rgba(151, 151, 151, 0.2);
+    cursor: pointer;
+  }
+  main.crew section div.detailsContainer div.textContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: start;
+    text-align: start;
+    position: relative;
+  }
+  main.crew section div.detailsContainer div.textContainer div {
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-bottom: 40px;
+    position: absolute;
+    width: 50vw;
+    top: 85px;
+  }
+  main.crew section div.detailsContainer div.textContainer div h3 {
+    font-size: 32px;
+    font-weight: 100;
+    margin-bottom: 10px;
+  }
+  main.crew section div.detailsContainer div.textContainer div h2 {
+    font-size: 56px;
+  }
+  main.crew section div.detailsContainer div.textContainer p {
+    height: 100px;
+    font-family: "Barlow", sans-serif;
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 35px;
+    margin-top: 220px;
+  }
+  main.crew section div.detailsContainer.douglas, main.crew section div.detailsContainer.mark, main.crew section div.detailsContainer.victor, main.crew section div.detailsContainer.ano {
+    width: 444px;
   }
 }/*# sourceMappingURL=Crew.css.map */
