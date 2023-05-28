@@ -1,3 +1,5 @@
+@import '../../variables.scss';
+
 main.crew{
     font-family: 'Barlow Condensed', sans-serif;
     box-sizing: border-box;
@@ -9,6 +11,42 @@ main.crew{
     background-position: center;
     display: grid;
     grid-template-rows: auto 1fr;
+
+    section {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+
+        h1 {
+            font-weight: 400;
+            font-size: 16px;
+            letter-spacing: 2.7px;
+            color: white;
+            margin-bottom: 30px;
+            span{
+                font-weight: 700;
+                color: $darkGrey;
+                margin-right: 10px;
+            }   
+        }
+
+        div.imageContainer{
+            width: 327px;
+            height: 223px;
+            display: flex;
+            justify-content: center;
+
+            border-bottom: .25px solid $darkGreyAlpha;
+            .crewPhoto{
+                height: 100%;
+                width: auto;
+                
+            }
+        }   
+    }
+    
 }
 
 @media screen and (min-width: 768px) {
