@@ -11,6 +11,7 @@ main.crew {
   grid-template-rows: auto 1fr;
 }
 main.crew section {
+  color: white;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -22,6 +23,7 @@ main.crew section h1 {
   font-size: 16px;
   letter-spacing: 2.7px;
   color: white;
+  margin-top: -70px;
   margin-bottom: 30px;
 }
 main.crew section h1 span {
@@ -34,9 +36,67 @@ main.crew section div.imageContainer {
   height: 223px;
   display: flex;
   justify-content: center;
+  margin-bottom: 32px;
   border-bottom: 0.25px solid rgba(151, 151, 151, 0.2);
 }
 main.crew section div.imageContainer .crewPhoto {
   height: 100%;
   width: auto;
+}
+main.crew section div.detailsContainer {
+  width: 327px;
+  height: 212px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+main.crew section div.detailsContainer ul {
+  list-style: none;
+  display: flex;
+  width: 88px;
+  justify-content: space-between;
+  margin-bottom: 32px;
+}
+main.crew section div.detailsContainer ul li {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: #979797;
+  cursor: pointer;
+}
+main.crew section div.detailsContainer ul li.activeCrew {
+  background-color: white;
+}
+main.crew section div.detailsContainer div.textContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: "Bellefair", serif;
+  text-align: center;
+}
+main.crew section div.detailsContainer div.textContainer div {
+  height: 54px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-bottom: 16px;
+}
+main.crew section div.detailsContainer div.textContainer div h3 {
+  font-size: 16px;
+  font-weight: 100;
+  text-transform: uppercase;
+  color: #979797;
+}
+main.crew section div.detailsContainer div.textContainer div h2 {
+  font-size: 24px;
+  font-weight: 300;
+  text-transform: uppercase;
+}
+main.crew section div.detailsContainer div.textContainer p {
+  height: 100px;
+  font-family: "Barlow", sans-serif;
+  font-size: 15px;
+  font-weight: 200;
+  line-height: 23px;
 }/*# sourceMappingURL=Crew.css.map */

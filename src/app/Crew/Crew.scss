@@ -13,6 +13,8 @@ main.crew{
     grid-template-rows: auto 1fr;
 
     section {
+        color: white;
+
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -24,6 +26,7 @@ main.crew{
             font-size: 16px;
             letter-spacing: 2.7px;
             color: white;
+            margin-top: -70px;
             margin-bottom: 30px;
             span{
                 font-weight: 700;
@@ -37,6 +40,7 @@ main.crew{
             height: 223px;
             display: flex;
             justify-content: center;
+            margin-bottom: 32px;
 
             border-bottom: .25px solid $darkGreyAlpha;
             .crewPhoto{
@@ -44,7 +48,71 @@ main.crew{
                 width: auto;
                 
             }
-        }   
+        } 
+        
+        div.detailsContainer {
+                width: 327px;
+                height: 212px;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            ul{
+                list-style: none;
+                display: flex;
+                width: 88px;
+                justify-content: space-between;
+                margin-bottom: 32px;
+                li {
+                    width: 10px;
+                    height: 10px;
+                    border-radius: 50%;
+                    background-color: $darkGrey;
+                    cursor: pointer;
+
+                }
+                li.activeCrew {
+                    background-color: white;
+                }
+            }
+            div.textContainer{
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                font-family: 'Bellefair', serif;
+                text-align: center;
+
+                div {
+                    height: 54px;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-between;
+                    margin-bottom: 16px;
+                    
+                    h3{
+                        font-size: 16px;
+                        font-weight: 100;
+                        text-transform: uppercase;
+                        color: $darkGrey;
+                    }
+
+                    h2{
+                        font-size: 24px;
+                        font-weight: 300;
+                        text-transform: uppercase;
+                    }  
+                }
+                
+
+                p{  
+                    height: 100px;
+                    font-family: 'Barlow', sans-serif;
+                    font-size: 15px;
+                    font-weight: 200;
+                    line-height: 23px; 
+                }
+            }
+        }
     }
     
 }

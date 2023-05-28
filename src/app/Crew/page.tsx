@@ -27,14 +27,18 @@ const Crew = (props: Props) => {
         <div className="detailsContainer">
           <ul>
             {/* nav dots */}
-            <li></li>
+            <li className="activeCrew"></li>
             <li></li>
             <li></li>
             <li></li>
           </ul>
-          <h3>{dummyData.role}</h3>
-          <h2>{dummyData.name}</h2>
-          <p>{dummyData.bio}</p>
+          <div className="textContainer">
+            <div>
+              <h3>{dummyData.role}</h3>
+              <h2>{dummyData.name}</h2>
+            </div>
+            <p>{dummyData.bio}</p>
+          </div>
         </div>
       </section>
     </main>
