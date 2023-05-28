@@ -36,7 +36,14 @@ const Technology = (props: Props) => {
         <h1>
           <span>01</span> SPACE LAUNCH 101
         </h1>
-        <Image src={technologyData[index]} />
+        <Image
+          src={
+            windowWidth >= 1440
+              ? technologyData[index].images.landscape
+              : technologyData[index].images.portrait
+          }
+          alt={technologyData[index].name}
+        />
       </section>
     </main>
   );
