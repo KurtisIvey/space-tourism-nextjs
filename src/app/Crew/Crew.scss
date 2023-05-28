@@ -252,12 +252,8 @@ main.crew{
                 align-self: flex-end;
                 justify-content: center;
                 padding-top: 0px;
-                margin-bottom: 0;
-                border-bottom: .25px solid $darkGreyAlpha;
-
-               
+          
             }
-            
             
             div.detailsContainer {
                 margin-left: auto;
@@ -324,7 +320,8 @@ main.crew{
                     }
                 }
             }
-            div.detailsContainer.douglas, div.detailsContainer.mark, div.detailsContainer.victor, div.detailsContainer.ano{
+            div.detailsContainer.douglas, div.detailsContainer.mark, 
+            div.detailsContainer.victor, div.detailsContainer.ano{
                 width:444px;
             }
         }  

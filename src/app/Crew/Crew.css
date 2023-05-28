@@ -239,8 +239,6 @@ main.crew section div.detailsContainer div.textContainer p {
     align-self: flex-end;
     justify-content: center;
     padding-top: 0px;
-    margin-bottom: 0;
-    border-bottom: 0.25px solid rgba(151, 151, 151, 0.2);
   }
   main.crew section div.detailsContainer {
     margin-left: auto;
@@ -303,7 +301,8 @@ main.crew section div.detailsContainer div.textContainer p {
     line-height: 35px;
     margin-top: 220px;
   }
-  main.crew section div.detailsContainer.douglas, main.crew section div.detailsContainer.mark, main.crew section div.detailsContainer.victor, main.crew section div.detailsContainer.ano {
+  main.crew section div.detailsContainer.douglas, main.crew section div.detailsContainer.mark,
+  main.crew section div.detailsContainer.victor, main.crew section div.detailsContainer.ano {
     width: 444px;
   }
 }/*# sourceMappingURL=Crew.css.map */
