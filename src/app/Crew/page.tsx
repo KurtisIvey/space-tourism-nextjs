@@ -29,6 +29,7 @@ const Crew = (props: Props) => {
     };
 
     detailsContainerWidth();
+    // monitors changes in index, so it can then run again and apply appropriate classname
   }, [index]);
 
   return (

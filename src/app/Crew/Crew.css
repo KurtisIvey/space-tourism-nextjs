@@ -124,6 +124,7 @@ main.crew section div.detailsContainer div.textContainer p {
     align-items: center;
     justify-content: center;
     width: 100%;
+    margin-top: auto;
   }
   main.crew section h1 {
     text-align: center;
