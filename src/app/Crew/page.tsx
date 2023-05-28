@@ -7,8 +7,6 @@ import Image from "next/image";
 import checkWebpSupport from "@/function/checkWebpSupport";
 type Props = {};
 
-const dummyData = crewData[0];
-
 const Crew = (props: Props) => {
   const [index, setIndex] = useState<number>(0);
   const supportsWebp = checkWebpSupport();
@@ -61,10 +59,10 @@ const Crew = (props: Props) => {
           </ul>
           <div className="textContainer">
             <div>
-              <h3>{dummyData.role}</h3>
-              <h2>{dummyData.name}</h2>
+              <h3>{crewData[index].role}</h3>
+              <h2>{crewData[index].name}</h2>
             </div>
-            <p>{dummyData.bio}</p>
+            <p>{crewData[index].bio}</p>
           </div>
         </div>
       </section>
