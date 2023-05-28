@@ -40,16 +40,13 @@ main.crew{
             height: 223px;
             display: flex;
             justify-content: center;
-            margin-bottom: 32px;
-
+            margin-bottom: 0;
             border-bottom: .25px solid $darkGreyAlpha;
             .crewPhoto{
                 height: 100%;
-                width: auto;
-                
+                width: auto; 
             }
         } 
-        
         div.detailsContainer {
                 width: 327px;
                 height: 212px;
@@ -66,9 +63,11 @@ main.crew{
                     width: 10px;
                     height: 10px;
                     border-radius: 50%;
-                    background-color: $darkGrey;
+                    background-color: $darkGreyAlpha;
                     cursor: pointer;
-
+                }
+                li:hover {
+                    background-color: $midTone;
                 }
                 li.activeCrew {
                     background-color: white;
@@ -95,30 +94,139 @@ main.crew{
                         text-transform: uppercase;
                         color: $darkGrey;
                     }
-
                     h2{
                         font-size: 24px;
                         font-weight: 300;
                         text-transform: uppercase;
                     }  
                 }
-                
-
                 p{  
                     height: 100px;
                     font-family: 'Barlow', sans-serif;
                     font-size: 15px;
-                    font-weight: 200;
+                    font-weight: 300;
                     line-height: 23px; 
                 }
             }
         }
-    }
-    
+    }  
 }
 
 @media screen and (min-width: 768px) {
+    main.crew{
+        font-family: 'Barlow Condensed', sans-serif;
+        box-sizing: border-box;
+        height: 100vh;
+        width: 100%;
+        overflow-x: hidden;
+        background-image: url('../../assets/crew/background-crew-tablet.jpg');
+        background-size: cover;
+        background-position: center;
+        display: grid;
+        grid-template-rows: auto 1fr;
     
+        section {
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-template-rows: auto auto 1fr;
+            align-items: center;
+            justify-content: center;
+            width: 100%;
+    
+            h1 {text-align: center;
+                margin-right: 480px;
+                grid-row: 1/2;
+                font-weight: 400;
+                font-size: 20px;
+                letter-spacing: 3.38px;
+                
+                margin-top: 25px;
+                margin-bottom: 0px;
+                span{
+                    font-weight: 700;
+                    margin-right: 10px;
+                }   
+            }
+    
+            div.imageContainer{
+                grid-row: 3/4;
+                width: auto;
+                height: 532px;
+                display: flex;
+                align-self: flex-end;
+                justify-content: center;
+                padding-top: 20px;
+                margin-bottom: 0;
+                border-bottom: .25px solid $darkGreyAlpha;
+                .crewPhoto{
+                    height: 100%;
+                    width: auto; 
+                }
+            } 
+            
+
+            div.detailsContainer {
+                margin-left: auto;
+                margin-right: auto;
+                grid-row: 2/3;
+                
+                height: 232px;
+                display: flex;
+                flex-direction: column-reverse;
+                justify-content: space-between;
+                align-items: center;
+                margin-top: 65px;
+
+                ul{
+                    margin-bottom: 0;
+                }
+                div.textContainer{
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-between;
+                    align-items: center;
+                    text-align: center;
+    
+                    div {
+                        height: 54px;
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: space-between;
+                        margin-bottom: 40px;
+                        
+                        h3{
+                            font-size: 24px;
+                            font-weight: 100;
+                            margin-bottom: 10px;
+                        }
+                        h2{
+                            font-size: 40px;
+                        }  
+                    }
+                    p{  
+                        height: 100px;
+                        font-family: 'Barlow', sans-serif;
+                        font-size: 16px;
+                        font-weight: 300;
+                        line-height: 25px;
+                        margin-top: 5px;
+                    }
+                }
+            }
+            div.detailsContainer.douglas{
+                width:458px;
+            }
+            div.detailsContainer.mark{
+                width:520px;
+            }
+            div.detailsContainer.victor{
+                width:592px;
+            }
+            div.detailsContainer.ano{
+                width:536px;
+            }
+        }  
+    }
 }
 
 @media screen and (min-width: 1440px) {

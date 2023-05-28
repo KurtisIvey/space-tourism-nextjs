@@ -1,6 +1,6 @@
 "use client";
 import Navbar from "@/components/Navbar/Navbar";
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import "./Crew.css";
 import crewData from "./crew.data";
 import Image from "next/image";
@@ -10,6 +10,26 @@ type Props = {};
 const Crew = (props: Props) => {
   const [index, setIndex] = useState<number>(0);
   const supportsWebp = checkWebpSupport();
+  const [activeCrew, setActiveCrew] = useState<string>("douglas");
+  useEffect(() => {
+    // sets activeCrew to then be passed through into classname to control custom width
+    const detailsContainerWidth = () => {
+      if (index === 0) {
+        setActiveCrew("douglas");
+      }
+      if (index === 1) {
+        setActiveCrew("mark");
+      }
+      if (index === 2) {
+        setActiveCrew("victor");
+      }
+      if (index === 3) {
+        setActiveCrew("ano");
+      }
+    };
+
+    detailsContainerWidth();
+  }, [index]);
 
   return (
     <main className="crew">
@@ -37,7 +57,7 @@ const Crew = (props: Props) => {
             />
           )}
         </div>
-        <div className="detailsContainer">
+        <div className={`detailsContainer ${activeCrew}`}>
           <ul>
             {/* nav dots */}
             <li

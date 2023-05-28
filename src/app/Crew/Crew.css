@@ -36,7 +36,7 @@ main.crew section div.imageContainer {
   height: 223px;
   display: flex;
   justify-content: center;
-  margin-bottom: 32px;
+  margin-bottom: 0;
   border-bottom: 0.25px solid rgba(151, 151, 151, 0.2);
 }
 main.crew section div.imageContainer .crewPhoto {
@@ -61,8 +61,11 @@ main.crew section div.detailsContainer ul li {
   width: 10px;
   height: 10px;
   border-radius: 50%;
-  background-color: #979797;
+  background-color: rgba(151, 151, 151, 0.2);
   cursor: pointer;
+}
+main.crew section div.detailsContainer ul li:hover {
+  background-color: #D0D6F9;
 }
 main.crew section div.detailsContainer ul li.activeCrew {
   background-color: white;
@@ -97,6 +100,114 @@ main.crew section div.detailsContainer div.textContainer p {
   height: 100px;
   font-family: "Barlow", sans-serif;
   font-size: 15px;
-  font-weight: 200;
+  font-weight: 300;
   line-height: 23px;
+}
+
+@media screen and (min-width: 768px) {
+  main.crew {
+    font-family: "Barlow Condensed", sans-serif;
+    box-sizing: border-box;
+    height: 100vh;
+    width: 100%;
+    overflow-x: hidden;
+    background-image: url("../../assets/crew/background-crew-tablet.jpg");
+    background-size: cover;
+    background-position: center;
+    display: grid;
+    grid-template-rows: auto 1fr;
+  }
+  main.crew section {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto 1fr;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+  }
+  main.crew section h1 {
+    text-align: center;
+    margin-right: 480px;
+    grid-row: 1/2;
+    font-weight: 400;
+    font-size: 20px;
+    letter-spacing: 3.38px;
+    margin-top: 25px;
+    margin-bottom: 0px;
+  }
+  main.crew section h1 span {
+    font-weight: 700;
+    margin-right: 10px;
+  }
+  main.crew section div.imageContainer {
+    grid-row: 3/4;
+    width: auto;
+    height: 532px;
+    display: flex;
+    align-self: flex-end;
+    justify-content: center;
+    padding-top: 20px;
+    margin-bottom: 0;
+    border-bottom: 0.25px solid rgba(151, 151, 151, 0.2);
+  }
+  main.crew section div.imageContainer .crewPhoto {
+    height: 100%;
+    width: auto;
+  }
+  main.crew section div.detailsContainer {
+    margin-left: auto;
+    margin-right: auto;
+    grid-row: 2/3;
+    height: 232px;
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 65px;
+  }
+  main.crew section div.detailsContainer ul {
+    margin-bottom: 0;
+  }
+  main.crew section div.detailsContainer div.textContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+  }
+  main.crew section div.detailsContainer div.textContainer div {
+    height: 54px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-bottom: 40px;
+  }
+  main.crew section div.detailsContainer div.textContainer div h3 {
+    font-size: 24px;
+    font-weight: 100;
+    margin-bottom: 10px;
+  }
+  main.crew section div.detailsContainer div.textContainer div h2 {
+    font-size: 40px;
+  }
+  main.crew section div.detailsContainer div.textContainer p {
+    height: 100px;
+    font-family: "Barlow", sans-serif;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 25px;
+    margin-top: 5px;
+  }
+  main.crew section div.detailsContainer.douglas {
+    width: 458px;
+  }
+  main.crew section div.detailsContainer.mark {
+    width: 520px;
+  }
+  main.crew section div.detailsContainer.victor {
+    width: 592px;
+  }
+  main.crew section div.detailsContainer.ano {
+    width: 536px;
+  }
 }/*# sourceMappingURL=Crew.css.map */
