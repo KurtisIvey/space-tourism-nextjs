@@ -54,17 +54,17 @@ main.technology {
                 display: flex;
                 justify-content: center;
                 align-items: center;
-                background-color: transparent;
                 cursor: pointer;
                 span{
                     margin-bottom: 3px;
                 }
             }
             li:hover {
-                background-color: $midTone;
+                background-color: $darkGreyAlpha;
             }
-            li.activeCrew {
+            li.activeSelector {
                 background-color: white;
+                color: black;
             }
         }div.textContainer{
             display: flex;

@@ -53,17 +53,17 @@ main.technology section ul li {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: transparent;
   cursor: pointer;
 }
 main.technology section ul li span {
   margin-bottom: 3px;
 }
 main.technology section ul li:hover {
-  background-color: #D0D6F9;
+  background-color: rgba(151, 151, 151, 0.2);
 }
-main.technology section ul li.activeCrew {
+main.technology section ul li.activeSelector {
   background-color: white;
+  color: black;
 }
 main.technology section div.textContainer {
   display: flex;

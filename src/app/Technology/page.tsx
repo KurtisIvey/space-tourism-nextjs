@@ -47,13 +47,22 @@ const Technology = (props: Props) => {
           alt={technologyData[index].name}
         />
         <ul>
-          <li>
+          <li
+            onClick={() => setIndex(0)}
+            className={index === 0 ? "activeSelector" : ""}
+          >
             <span>1</span>
           </li>
-          <li>
+          <li
+            onClick={() => setIndex(1)}
+            className={index === 1 ? "activeSelector" : ""}
+          >
             <span>2</span>
           </li>
-          <li>
+          <li
+            onClick={() => setIndex(2)}
+            className={index === 2 ? "activeSelector" : ""}
+          >
             <span>3</span>
           </li>
         </ul>
