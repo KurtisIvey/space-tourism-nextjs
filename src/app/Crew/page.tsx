@@ -6,6 +6,8 @@ import crewData from "./crew.data";
 
 type Props = {};
 
+const dummyData = crewData[0];
+
 const Crew = (props: Props) => {
   return (
     <main className="crew">

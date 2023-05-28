@@ -45,7 +45,7 @@ const Destination = (props: Props) => {
           <Image
             className="planetImage"
             src={destinationInfo[dataIndex].images.webp}
-            alt="moon"
+            alt={destinationInfo[dataIndex].name}
             width={500}
             height={300}
           />
@@ -53,7 +53,7 @@ const Destination = (props: Props) => {
           <Image
             className="planetImage"
             src={destinationInfo[dataIndex].images.png}
-            alt="moon"
+            alt={destinationInfo[dataIndex].name}
             width={500}
             height={300}
           />
