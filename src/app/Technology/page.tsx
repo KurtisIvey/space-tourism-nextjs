@@ -46,6 +46,17 @@ const Technology = (props: Props) => {
           }
           alt={technologyData[index].name}
         />
+        <ul>
+          <li>
+            <span>1</span>
+          </li>
+          <li>
+            <span>2</span>
+          </li>
+          <li>
+            <span>3</span>
+          </li>
+        </ul>
       </section>
     </main>
   );

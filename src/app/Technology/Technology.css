@@ -36,4 +36,31 @@ main.technology section h1 span {
 main.technology section .techImage {
   width: 100%;
   height: auto;
+}
+main.technology section ul {
+  list-style: none;
+  display: flex;
+  width: 152px;
+  justify-content: space-between;
+  margin-bottom: 0px;
+}
+main.technology section ul li {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: 1px solid #979797;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: transparent;
+  cursor: pointer;
+}
+main.technology section ul li span {
+  margin-bottom: 3px;
+}
+main.technology section ul li:hover {
+  background-color: #D0D6F9;
+}
+main.technology section ul li.activeCrew {
+  background-color: white;
 }/*# sourceMappingURL=Technology.css.map */
