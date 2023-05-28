@@ -1,6 +1,6 @@
 "use client";
 import Navbar from "@/components/Navbar/Navbar";
-import React from "react";
+import React, { useState } from "react";
 import "./Crew.css";
 import crewData from "./crew.data";
 import Image from "next/image";
@@ -10,6 +10,8 @@ type Props = {};
 const dummyData = crewData[0];
 
 const Crew = (props: Props) => {
+  const [index, setIndex] = useState<number>(0);
+
   return (
     <main className="crew">
       <Navbar activePage="crew" />
@@ -27,10 +29,22 @@ const Crew = (props: Props) => {
         <div className="detailsContainer">
           <ul>
             {/* nav dots */}
-            <li className="activeCrew"></li>
-            <li></li>
-            <li></li>
-            <li></li>
+            <li
+              onClick={() => setIndex(0)}
+              className={index === 0 ? "activeCrew" : ""}
+            />
+            <li
+              onClick={() => setIndex(1)}
+              className={index === 1 ? "activeCrew" : ""}
+            />
+            <li
+              onClick={() => setIndex(2)}
+              className={index === 2 ? "activeCrew" : ""}
+            />
+            <li
+              onClick={() => setIndex(3)}
+              className={index === 3 ? "activeCrew" : ""}
+            />
           </ul>
           <div className="textContainer">
             <div>
