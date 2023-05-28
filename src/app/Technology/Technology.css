@@ -35,14 +35,15 @@ main.technology section h1 span {
 }
 main.technology section .techImage {
   width: 100%;
-  height: auto;
+  height: 170px;
+  margin-bottom: 34px;
 }
 main.technology section ul {
   list-style: none;
   display: flex;
   width: 152px;
   justify-content: space-between;
-  margin-bottom: 0px;
+  margin-bottom: 24px;
 }
 main.technology section ul li {
   width: 40px;
@@ -63,4 +64,40 @@ main.technology section ul li:hover {
 }
 main.technology section ul li.activeCrew {
   background-color: white;
+}
+main.technology section div.textContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: "Bellefair", serif;
+  text-align: center;
+  margin: 0 24px;
+}
+main.technology section div.textContainer div {
+  height: 54px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-bottom: 16px;
+}
+main.technology section div.textContainer div h2 {
+  font-size: 14px;
+  font-weight: 100;
+  text-transform: uppercase;
+  color: #979797;
+}
+main.technology section div.textContainer div h3 {
+  font-size: 24px;
+  font-weight: 300;
+  text-transform: uppercase;
+}
+main.technology section div.textContainer p {
+  height: 100px;
+  font-family: "Barlow", sans-serif;
+  font-size: 15px;
+  word-wrap: normal;
+  font-weight: 300;
+  line-height: 23px;
+  margin-bottom: 110px;
 }/*# sourceMappingURL=Technology.css.map */

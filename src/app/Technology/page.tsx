@@ -57,6 +57,14 @@ const Technology = (props: Props) => {
             <span>3</span>
           </li>
         </ul>
+        <div className="textContainer">
+          <div>
+            <h2>THE TERMINOLOGY...</h2>
+            <h3>{technologyData[index].name}</h3>
+          </div>
+
+          <p>{technologyData[index].description}</p>
+        </div>
       </section>
     </main>
   );
