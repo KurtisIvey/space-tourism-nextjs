@@ -1,1 +1,12 @@
-/*# sourceMappingURL=Crew.css.map */
+main.crew {
+  font-family: "Barlow Condensed", sans-serif;
+  box-sizing: border-box;
+  height: 100vh;
+  width: 100%;
+  overflow-x: hidden;
+  background-image: url("../../assets/crew/background-crew-mobile.jpg");
+  background-size: cover;
+  background-position: center;
+  display: grid;
+  grid-template-rows: auto 1fr;
+}/*# sourceMappingURL=Crew.css.map */
