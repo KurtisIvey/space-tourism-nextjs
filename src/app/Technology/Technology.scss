@@ -13,6 +13,7 @@ main.technology {
     grid-template-rows: auto 1fr;
     
     section {
+        width: 100%;
         color: white;
         margin: 0 auto;
         color: white;
@@ -32,6 +33,11 @@ main.technology {
                 color: $darkGrey;
                 margin-right: 10px;
             }   
+        }
+        .techImage{
+            width: 100%;
+            height: auto;
+           
         }
     }
 }

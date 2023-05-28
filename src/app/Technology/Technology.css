@@ -11,6 +11,7 @@ main.technology {
   grid-template-rows: auto 1fr;
 }
 main.technology section {
+  width: 100%;
   color: white;
   margin: 0 auto;
   color: white;
@@ -31,4 +32,8 @@ main.technology section h1 span {
   font-weight: 700;
   color: #979797;
   margin-right: 10px;
+}
+main.technology section .techImage {
+  width: 100%;
+  height: auto;
 }/*# sourceMappingURL=Technology.css.map */

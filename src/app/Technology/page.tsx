@@ -36,11 +36,13 @@ const Technology = (props: Props) => {
         <h1>
           <span>01</span> SPACE LAUNCH 101
         </h1>
+
         <Image
+          className="techImage"
           src={
             windowWidth >= 1440
-              ? technologyData[index].images.landscape
-              : technologyData[index].images.portrait
+              ? technologyData[index].images.portrait
+              : technologyData[index].images.landscape
           }
           alt={technologyData[index].name}
         />
