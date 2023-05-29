@@ -6,8 +6,6 @@ import "./Destination.css";
 import Image from "next/image";
 import destinationData from "./destination.data";
 import checkWebpSupport from "@/function/checkWebpSupport";
-import Head from "next/head";
-import { NextSeo } from "next-seo";
 
 type Props = {};
 
@@ -16,6 +14,7 @@ const Destination = (props: Props) => {
   const [index, setIndex] = useState<number>(0);
   const supportsWebp = checkWebpSupport();
 
+  // due to use client, must set title like react application
   useEffect(() => {
     document.title = "Space Tourism | Destination";
   }, []);
