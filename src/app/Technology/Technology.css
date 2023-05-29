@@ -56,6 +56,7 @@ main.technology section ul li {
   cursor: pointer;
 }
 main.technology section ul li span {
+  font-family: "Bellefair", serif;
   margin-bottom: 3px;
 }
 main.technology section ul li:hover {
@@ -151,6 +152,10 @@ main.technology section div.textContainer p {
     width: 60px;
     height: 60px;
     border-radius: 50%;
+  }
+  main.technology section ul li span {
+    font-size: 24px;
+    margin-bottom: 0;
   }
   main.technology section div.textContainer {
     display: flex;
