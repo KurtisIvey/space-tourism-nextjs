@@ -13,6 +13,10 @@ const Technology = (props: Props) => {
   const [windowWidth, setWindowWidth] = useState<number>(0);
 
   useEffect(() => {
+    document.title = "Space Tourism | Technology";
+  }, []);
+
+  useEffect(() => {
     const handleResize = () => {
       setWindowWidth(window.innerWidth);
     };
@@ -34,7 +38,7 @@ const Technology = (props: Props) => {
       <Navbar activePage="technology" />
       <section>
         <h1>
-          <span>03</span> SPACE LAUNCH 101
+          <span>01</span> SPACE LAUNCH 101
         </h1>
 
         <Image

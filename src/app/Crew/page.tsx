@@ -13,6 +13,10 @@ const Crew = (props: Props) => {
   const [activeCrew, setActiveCrew] = useState<string>("douglas");
 
   useEffect(() => {
+    document.title = "Space Tourism | Crew";
+  }, []);
+
+  useEffect(() => {
     // sets activeCrew to then be passed through into classname to control custom width
     const detailsContainerWidth = () => {
       if (index === 0) {
