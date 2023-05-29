@@ -101,4 +101,93 @@ main.technology section div.textContainer p {
   font-weight: 300;
   line-height: 25px;
   margin-bottom: 110px;
+}
+
+@media screen and (min-width: 768px) {
+  main.technology {
+    font-family: "Barlow Condensed", sans-serif;
+    box-sizing: border-box;
+    height: 100vh;
+    width: 100%;
+    overflow-x: hidden;
+    background-image: url("../../assets/technology/background-technology-mobile.jpg");
+    background-size: cover;
+    background-position: center;
+    display: grid;
+    grid-template-rows: auto 1fr;
+  }
+  main.technology section {
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    align-items: start;
+  }
+  main.technology section h1 {
+    font-weight: 400;
+    font-size: 20px;
+    letter-spacing: 3.38px;
+    margin-bottom: 62px;
+    margin-top: -119px;
+    margin-left: 38.5px;
+  }
+  main.technology section .techImage {
+    align-self: center;
+    width: 100%;
+    height: auto;
+    margin-bottom: 56px;
+  }
+  main.technology section ul {
+    align-self: center;
+    list-style: none;
+    display: flex;
+    width: 210px;
+    justify-content: space-between;
+    margin-bottom: 44px;
+  }
+  main.technology section ul li {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+  }
+  main.technology section div.textContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 0 auto;
+    width: 458px;
+    padding: 0 10px;
+  }
+  main.technology section div.textContainer div {
+    height: 54px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-bottom: 16px;
+  }
+  main.technology section div.textContainer div h2 {
+    font-size: 16px;
+    font-weight: 200;
+    letter-spacing: 2.7px;
+    margin-bottom: 10px;
+  }
+  main.technology section div.textContainer div h3 {
+    font-size: 40px;
+  }
+  main.technology section div.textContainer p {
+    text-align: center;
+    height: auto;
+    font-family: "Barlow", sans-serif;
+    font-size: 16px;
+    word-wrap: normal;
+    font-weight: 300;
+    line-height: 28px;
+    margin-bottom: 0;
+    margin-top: 25px;
+    padding: 0 10px;
+  }
 }/*# sourceMappingURL=Technology.css.map */

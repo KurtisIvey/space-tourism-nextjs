@@ -124,17 +124,14 @@ main.crew{
             width: 100%;
             margin-top: auto;
     
-            h1 {text-align: center;
+            h1 {
+                text-align: center;
                 margin-right: 480px;
                 grid-row: 1/2;
                 font-size: 20px;
                 letter-spacing: 3.38px;
                 margin-top: 25px;
-                margin-bottom: 0px;
-                span{
-                    font-weight: 700;
-                    margin-right: 10px;
-                }   
+                margin-bottom: 0px;  
             }
     
             div.imageContainer{

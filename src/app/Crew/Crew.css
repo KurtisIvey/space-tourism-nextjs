@@ -126,10 +126,6 @@ main.crew section div.detailsContainer div.textContainer p {
     margin-top: 25px;
     margin-bottom: 0px;
   }
-  main.crew section h1 span {
-    font-weight: 700;
-    margin-right: 10px;
-  }
   main.crew section div.imageContainer {
     grid-row: 3/4;
     width: auto;
