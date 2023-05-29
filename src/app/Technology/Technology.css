@@ -125,7 +125,7 @@ main.technology section div.textContainer p {
     flex-direction: column;
     text-align: center;
     justify-content: center;
-    align-items: start;
+    align-items: flex-start;
   }
   main.technology section h1 {
     font-weight: 400;
@@ -212,11 +212,11 @@ main.technology section div.textContainer p {
   main.technology section {
     width: 100%;
     max-width: 1440px;
+    min-height: 900px;
     margin: 0 auto;
     display: grid;
     grid-template-columns: 0.25fr auto 1fr 0.7fr;
     grid-template-rows: 0.13fr 1fr;
-    flex-direction: column;
     text-align: center;
     align-items: start;
     position: relative;

@@ -206,6 +206,7 @@ main.crew section div.detailsContainer div.textContainer p {
     justify-content: center;
     width: 100%;
     max-width: 1440px;
+    min-height: 900px;
     margin-top: 0;
     margin-left: auto;
     margin-right: auto;
@@ -227,16 +228,19 @@ main.crew section div.detailsContainer div.textContainer p {
     font-weight: 700;
     margin-right: 10px;
   }
-  main.crew section div.imageContainer {
+  main.crew section .imageContainer {
     grid-row: 2/4;
     grid-column: 2/3;
     width: auto;
-    height: -moz-fit-content;
-    height: fit-content;
+    height: 100%;
     display: flex;
     align-self: flex-end;
     justify-content: center;
     padding-top: 0px;
+  }
+  main.crew section .imageContainer .crewPhoto {
+    height: 100%;
+    width: auto;
   }
   main.crew section div.detailsContainer {
     margin-left: auto;
@@ -247,7 +251,7 @@ main.crew section div.detailsContainer div.textContainer p {
     display: flex;
     flex-direction: column-reverse;
     justify-content: center;
-    align-items: start;
+    align-items: flex-start;
     justify-self: center;
     padding-left: 55px;
   }
@@ -256,7 +260,7 @@ main.crew section div.detailsContainer div.textContainer p {
     display: flex;
     width: 132px;
     justify-content: space-between;
-    margin-bottom: 0;
+    margin-bottom: 100px;
     margin-top: 10rem;
   }
   main.crew section div.detailsContainer ul li {
