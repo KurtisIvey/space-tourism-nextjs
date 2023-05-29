@@ -209,17 +209,19 @@ main.crew section div.detailsContainer div.textContainer p {
     margin-top: 0;
     margin-left: auto;
     margin-right: auto;
+    position: relative;
   }
   main.crew section h1 {
-    grid-row: 2/3;
-    grid-column: 1/2;
+    position: absolute;
+    left: 166.5px;
+    top: 69px;
     font-size: 28px;
     letter-spacing: 4.72px;
     margin-top: 0;
     margin-right: 0;
     margin-bottom: 0;
     justify-self: flex-start;
-    margin-left: 140px;
+    margin-left: 0;
   }
   main.crew section h1 span {
     font-weight: 700;
@@ -247,6 +249,7 @@ main.crew section div.detailsContainer div.textContainer p {
     justify-content: center;
     align-items: start;
     justify-self: center;
+    padding-left: 55px;
   }
   main.crew section div.detailsContainer ul {
     list-style: none;
