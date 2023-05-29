@@ -131,13 +131,17 @@ main.technology {
         text-align: center;
         justify-content: center;
         align-items: flex-start;
+        position: relative;
         h1 {
+            position: absolute;
+            left: 38.5px;
+            top: 36px;
             font-weight: 400;
             font-size: 20px;
             letter-spacing: 3.38px;
-            margin-bottom: 62px;
-            margin-top: -119px;  
-            margin-left: 38.5px;
+            margin-bottom: 0;
+            margin-top: 0;  
+            margin-left: 0;
         }
         .techImage{
             align-self: center;
