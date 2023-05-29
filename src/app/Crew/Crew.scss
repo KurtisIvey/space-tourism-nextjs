@@ -11,7 +11,23 @@ main.crew{
     background-position: center;
     display: grid;
     grid-template-rows: auto 1fr;
+    position: relative;
 
+    h1.pageTitle {
+        position: absolute;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        top: 88px;
+        font-weight: 400;
+        font-size: 16px;
+        letter-spacing: 2.7px;
+        color: white;  
+            span{
+                font-weight: 700;
+                color: $darkGrey;
+                margin-right: 10px;
+                }   
+    }
     section {
         color: white;
 
@@ -21,26 +37,14 @@ main.crew{
         justify-content: center;
         width: 100%;
 
-        h1 {
-            font-weight: 400;
-            font-size: 16px;
-            letter-spacing: 2.7px;
-            color: white;
-            margin-top: -70px;
-            margin-bottom: 30px;
-            span{
-                font-weight: 700;
-                color: $darkGrey;
-                margin-right: 10px;
-            }   
-        }
+        
 
         div.imageContainer{
             width: 327px;
             height: 223px;
             display: flex;
             justify-content: center;
-            margin-bottom: 0;
+            margin-bottom: 40px;
             border-bottom: .25px solid $darkGreyAlpha;
             .crewPhoto{
                 height: 100%;
@@ -115,6 +119,22 @@ main.crew{
 @media screen and (min-width: 768px) {
     main.crew{
         background-image: url('../../assets/crew/background-crew-tablet.jpg');
+        h1.pageTitle {
+            position: absolute;
+            left: 38.5px;
+            transform: none;
+            top: 136px;
+            font-weight: 400;
+            font-size: 20px;
+            letter-spacing: 3.38px;
+            color: white;  
+                span{
+                    font-weight: 700;
+                    color: $darkGrey;
+                    margin-right: 10px;
+                    }   
+        }
+        
         section {
             display: grid;
             grid-template-columns: 1fr;
@@ -124,16 +144,7 @@ main.crew{
             width: 100%;
             margin-top: auto;
             position: relative;
-            h1 {
-                position: absolute;
-                left: 38.5px;
-                top: -24px;
-                font-size: 20px;
-                letter-spacing: 3.38px;
-                margin-top: 0;
-                margin-bottom: 0;  
-                
-            }
+            
     
             div.imageContainer{
                 grid-row: 2/3;
@@ -215,6 +226,23 @@ main.crew{
 @media screen and (min-width: 1440px) {
     main.crew{
         background-image: url('../../assets/crew/background-crew-desktop.jpg');
+        
+        h1.pageTitle {
+            position: absolute;
+            left: 166.5px;
+            transform: none;
+            top: 212px;
+            font-weight: 400;
+            font-size: 28px;
+            letter-spacing: 4.72px;
+            color: white;  
+                span{
+                    font-weight: 700;
+                    color: $darkGrey;
+                    margin-right: 10px;
+                    }   
+        }
+        
         section {
             display: grid;
             grid-template-columns: 1fr 1fr;
@@ -227,22 +255,7 @@ main.crew{
             margin-left: auto;
             margin-right: auto;
             position: relative;
-            h1 {
-                position: absolute;
-                left: 166.5px;
-                top: 69px;
-                font-size: 28px;
-                letter-spacing: 4.72px;
-                margin-top: 0;
-                margin-right: 0;
-                margin-bottom: 0;
-                justify-self: flex-start;
-                margin-left: 0;
-                span{
-                    font-weight: 700;
-                    margin-right: 10px;
-                }   
-            }
+            
     
             div.imageContainer{
                 grid-row: 2/4;

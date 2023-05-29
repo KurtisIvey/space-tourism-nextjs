@@ -9,6 +9,22 @@ main.destination {
   background-position: center;
   display: grid;
   grid-template-rows: auto 1fr;
+  position: relative;
+}
+main.destination h1.pageTitle {
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  top: 88px;
+  font-weight: 400;
+  font-size: 16px;
+  letter-spacing: 2.7px;
+  color: white;
+}
+main.destination h1.pageTitle span {
+  font-weight: 700;
+  color: #979797;
+  margin-right: 10px;
 }
 main.destination section {
   max-width: 768px;
@@ -19,18 +35,6 @@ main.destination section {
   text-align: center;
   justify-content: center;
   align-items: center;
-}
-main.destination section h1 {
-  font-weight: 400;
-  font-size: 16px;
-  letter-spacing: 2.7px;
-  color: white;
-  margin-bottom: 30px;
-}
-main.destination section h1 span {
-  font-weight: 700;
-  color: #979797;
-  margin-right: 10px;
 }
 main.destination section .planetImage {
   width: 170px;
@@ -129,6 +133,21 @@ main.destination section .metricsBigContainer .metricContainer div {
     grid-template-rows: auto 1fr;
     align-items: flex-start;
   }
+  main.destination h1.pageTitle {
+    position: absolute;
+    left: 38.5px;
+    transform: none;
+    top: 136px;
+    font-weight: 400;
+    font-size: 20px;
+    letter-spacing: 3.38px;
+    color: white;
+  }
+  main.destination h1.pageTitle span {
+    font-weight: 700;
+    color: #979797;
+    margin-right: 10px;
+  }
   main.destination section {
     height: 100%;
     width: 100%;
@@ -136,21 +155,6 @@ main.destination section .metricsBigContainer .metricContainer div {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-  }
-  main.destination section h1 {
-    align-self: flex-start;
-    font-weight: 400;
-    font-size: 20px;
-    letter-spacing: 3.38px;
-    color: white;
-    margin-bottom: 70px;
-    margin-left: 38.5px;
-    margin-top: -25px;
-  }
-  main.destination section h1 span {
-    font-weight: 700;
-    color: #979797;
-    margin-right: 14px;
   }
   main.destination section .planetImage {
     width: 300px;
@@ -209,11 +213,26 @@ main.destination section .metricsBigContainer .metricContainer div {
     display: grid;
     grid-template-rows: auto 1fr;
     align-items: center;
-    min-height: 900px;
+  }
+  main.destination h1.pageTitle {
+    position: absolute;
+    left: 166.5px;
+    transform: none;
+    top: 212px;
+    font-weight: 400;
+    font-size: 28px;
+    letter-spacing: 4.72px;
+    color: white;
+  }
+  main.destination h1.pageTitle span {
+    font-weight: 700;
+    color: #979797;
+    margin-right: 10px;
   }
   main.destination section {
     width: 100%;
     max-width: 1440px;
+    min-height: 900px;
     margin: 0 auto;
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -222,28 +241,13 @@ main.destination section .metricsBigContainer .metricContainer div {
     align-items: center;
     position: relative;
   }
-  main.destination section h1 {
-    position: absolute;
-    left: 166.5px;
-    top: 69px;
-    justify-self: flex-start;
-    font-size: 28px;
-    letter-spacing: 3.38px;
-    color: white;
-    margin: 0;
-  }
-  main.destination section h1 span {
-    font-weight: 700;
-    color: #979797;
-    margin-right: 20px;
-  }
   main.destination section .planetImage {
     grid-row: 2/3;
     grid-column: 1/2;
     justify-self: center;
     width: 445px;
     height: 445px;
-    margin-bottom: -38.5px;
+    margin-bottom: 130px;
     margin-left: 180px;
     margin-right: 0;
   }

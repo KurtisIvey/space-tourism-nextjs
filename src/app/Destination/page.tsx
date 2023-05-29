@@ -22,10 +22,10 @@ const Destination = (props: Props) => {
   return (
     <main className="destination">
       <Navbar activePage="destination" />
+      <h1 className="pageTitle">
+        <span>01</span> PICK YOUR DESTINATION
+      </h1>
       <section>
-        <h1>
-          <span>01</span> PICK YOUR DESTINATION
-        </h1>
         {supportsWebp ? (
           <Image
             className="planetImage"

@@ -40,10 +40,10 @@ const Crew = (props: Props) => {
   return (
     <main className="crew">
       <Navbar activePage="crew" />
+      <h1 className="pageTitle">
+        <span>02</span> MEET YOUR CREW
+      </h1>
       <section>
-        <h1>
-          <span>02</span> MEET YOUR CREW
-        </h1>
         <div className="imageContainer">
           {supportsWebp ? (
             <Image
