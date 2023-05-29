@@ -118,24 +118,25 @@ main.crew{
         section {
             display: grid;
             grid-template-columns: 1fr;
-            grid-template-rows: auto auto 1fr;
+            grid-template-rows:  .3fr 1fr;
             align-items: center;
             justify-content: center;
             width: 100%;
             margin-top: auto;
-    
+            position: relative;
             h1 {
-                text-align: center;
-                margin-right: 480px;
-                grid-row: 1/2;
+                position: absolute;
+                left: 38.5px;
+                top: -24px;
                 font-size: 20px;
                 letter-spacing: 3.38px;
-                margin-top: 25px;
-                margin-bottom: 0px;  
+                margin-top: 0;
+                margin-bottom: 0;  
+                
             }
     
             div.imageContainer{
-                grid-row: 3/4;
+                grid-row: 2/3;
                 width: auto;
                 height: 532px;
                 display: flex;
@@ -149,13 +150,15 @@ main.crew{
             div.detailsContainer {
                 margin-left: auto;
                 margin-right: auto;
-                grid-row: 2/3;
+                grid-row: 1/2;
                 height: 232px;
                 display: flex;
                 flex-direction: column-reverse;
                 justify-content: space-between;
                 align-items: center;
-                margin-top: 65px;
+                margin-top: 55px;
+                margin-bottom: 25px;
+                
 
                 ul{
                     margin-bottom: 0;
@@ -220,8 +223,6 @@ main.crew{
             justify-content: center;
             width: 100%;
             max-width: 1440px;
-            min-height: 900px;
-
             margin-top: 0;
             margin-left: auto;
             margin-right: auto;
@@ -243,7 +244,7 @@ main.crew{
                 }   
             }
     
-            .imageContainer{
+            div.imageContainer{
                 grid-row: 2/4;
                 grid-column: 2/3;
                 width: auto;
@@ -252,11 +253,7 @@ main.crew{
                 align-self: flex-end;
                 justify-content: center;
                 padding-top: 0px;
-                
-                .crewPhoto{
-                    height: 100%;
-                    width: auto;
-                }
+          
             }
             
             div.detailsContainer {
@@ -268,7 +265,7 @@ main.crew{
                 display: flex;
                 flex-direction: column-reverse;
                 justify-content: center;
-                align-items: flex-start;
+                align-items: start;
                 justify-self: center;
                 padding-left: 55px;
 
@@ -277,7 +274,7 @@ main.crew{
                     display: flex;
                     width: 132px;
                     justify-content: space-between;
-                    margin-bottom: 100px;
+                    margin-bottom: 0;
                     margin-top: 10rem;
                     li {
                         width: 15px;
@@ -304,6 +301,7 @@ main.crew{
                         position: absolute;
                         width: 50vw;
                         top: 85px;
+                        
                         h3{
                             font-size: 32px;
                             font-weight: 100;
