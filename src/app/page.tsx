@@ -1,9 +1,15 @@
-import React from "react";
+"use client";
+
+import React, { useEffect } from "react";
 import Navbar from "@/components/Navbar/Navbar";
 import "./home.css";
 import Link from "next/link";
 
 export default function Home() {
+  useEffect(() => {
+    document.title = "Space Tourism";
+  }, []);
+
   return (
     <main className="home">
       <Navbar activePage={"home"} />

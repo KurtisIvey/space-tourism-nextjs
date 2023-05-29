@@ -1,17 +1,24 @@
 "use client";
 
 import Navbar from "@/components/Navbar/Navbar";
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import "./Destination.css";
 import Image from "next/image";
 import destinationData from "./destination.data";
 import checkWebpSupport from "@/function/checkWebpSupport";
+import Head from "next/head";
+import { NextSeo } from "next-seo";
+
 type Props = {};
 
 const Destination = (props: Props) => {
   // sets index to load destination info data as it's an array
   const [index, setIndex] = useState<number>(0);
   const supportsWebp = checkWebpSupport();
+
+  useEffect(() => {
+    document.title = "Space Tourism | Destination";
+  }, []);
 
   return (
     <main className="destination">
