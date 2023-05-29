@@ -36,11 +36,10 @@ const Technology = (props: Props) => {
   return (
     <main className="technology">
       <Navbar activePage="technology" />
+      <h1 className="pageTitle">
+        <span>03</span> SPACE LAUNCH 101
+      </h1>
       <section>
-        <h1>
-          <span>03</span> SPACE LAUNCH 101
-        </h1>
-
         <Image
           className="techImage"
           src={

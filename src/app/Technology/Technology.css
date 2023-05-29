@@ -9,6 +9,22 @@ main.technology {
   background-position: center;
   display: grid;
   grid-template-rows: auto 1fr;
+  position: relative;
+}
+main.technology h1.pageTitle {
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  top: 88px;
+  font-weight: 400;
+  font-size: 16px;
+  letter-spacing: 2.7px;
+  color: white;
+}
+main.technology h1.pageTitle span {
+  font-weight: 700;
+  color: #979797;
+  margin-right: 10px;
 }
 main.technology section {
   width: 100%;
@@ -21,22 +37,11 @@ main.technology section {
   justify-content: center;
   align-items: center;
 }
-main.technology section h1 {
-  font-weight: 400;
-  font-size: 16px;
-  letter-spacing: 2.7px;
-  color: white;
-  margin-bottom: 30px;
-}
-main.technology section h1 span {
-  font-weight: 700;
-  color: #979797;
-  margin-right: 10px;
-}
 main.technology section .techImage {
   width: 112%;
   height: auto;
   margin-bottom: 34px;
+  margin-top: 48px;
 }
 main.technology section ul {
   list-style: none;
@@ -118,6 +123,21 @@ main.technology section div.textContainer p {
     display: grid;
     grid-template-rows: auto 1fr;
   }
+  main.technology h1.pageTitle {
+    position: absolute;
+    left: 38.5px;
+    transform: none;
+    top: 136px;
+    font-weight: 400;
+    font-size: 20px;
+    letter-spacing: 3.38px;
+    color: white;
+  }
+  main.technology h1.pageTitle span {
+    font-weight: 700;
+    color: #979797;
+    margin-right: 10px;
+  }
   main.technology section {
     width: 100%;
     margin: 0 auto;
@@ -128,21 +148,11 @@ main.technology section div.textContainer p {
     align-items: flex-start;
     position: relative;
   }
-  main.technology section h1 {
-    position: absolute;
-    left: 38.5px;
-    top: 36px;
-    font-weight: 400;
-    font-size: 20px;
-    letter-spacing: 3.38px;
-    margin-bottom: 0;
-    margin-top: 0;
-    margin-left: 0;
-  }
   main.technology section .techImage {
     align-self: center;
-    width: 100%;
+    width: 101%;
     height: auto;
+    margin-top: 10vh;
     margin-bottom: 56px;
   }
   main.technology section ul {
@@ -170,7 +180,7 @@ main.technology section div.textContainer p {
     text-align: center;
     margin: 0 auto;
     width: 458px;
-    padding: 0 10px;
+    padding: 0 10px 50px 10px;
   }
   main.technology section div.textContainer div {
     height: 54px;
@@ -213,6 +223,21 @@ main.technology section div.textContainer p {
     display: grid;
     grid-template-rows: auto 1fr;
   }
+  main.technology h1.pageTitle {
+    position: absolute;
+    left: 166.5px;
+    transform: none;
+    top: 212px;
+    font-weight: 400;
+    font-size: 28px;
+    letter-spacing: 4.72px;
+    color: white;
+  }
+  main.technology h1.pageTitle span {
+    font-weight: 700;
+    color: #979797;
+    margin-right: 10px;
+  }
   main.technology section {
     width: 100%;
     max-width: 1440px;
@@ -224,17 +249,6 @@ main.technology section div.textContainer p {
     text-align: center;
     align-items: start;
     position: relative;
-  }
-  main.technology section h1 {
-    position: absolute;
-    left: 166.5px;
-    top: 0px;
-    font-weight: 400;
-    font-size: 28px;
-    letter-spacing: 4.72px;
-    margin-bottom: 0;
-    margin-top: 70px;
-    margin-left: 0px;
   }
   main.technology section .techImage {
     grid-row: 2/3;
