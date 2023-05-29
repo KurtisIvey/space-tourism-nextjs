@@ -187,7 +187,6 @@ main.technology section div.textContainer p {
   main.technology section div.textContainer p {
     text-align: center;
     height: auto;
-    font-family: "Barlow", sans-serif;
     font-size: 16px;
     word-wrap: normal;
     font-weight: 300;
@@ -271,6 +270,8 @@ main.technology section div.textContainer p {
     text-align: start;
     margin: auto 0;
     width: 458px;
+    min-height: 271px;
+    height: auto;
     padding: 0 10px 50px 60px;
   }
   main.technology section div.textContainer div {
@@ -305,6 +306,7 @@ main.technology section div.textContainer p {
     line-height: 32px;
     margin-bottom: 0;
     margin-top: 25px;
-    padding: 0 10px;
+    padding: 0 8px;
+    height: 192px;
   }
 }/*# sourceMappingURL=Technology.css.map */

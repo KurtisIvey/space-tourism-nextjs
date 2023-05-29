@@ -192,7 +192,6 @@ main.technology {
             p{  
                 text-align: center;
                 height: auto;
-                font-family: 'Barlow', sans-serif;
                 font-size: 16px;
                 word-wrap: normal;
                 font-weight: 300;
@@ -278,8 +277,10 @@ main.technology {
                 justify-content: center;
                 align-items: flex-start;
                 text-align: start;
-                margin: auto 0;
+                margin: auto 0 ;
                 width: 458px;
+                min-height: 271px;
+                height: auto;
                 padding: 0 10px 50px 60px;
     
                 div {
@@ -315,7 +316,8 @@ main.technology {
                     line-height: 32px; 
                     margin-bottom: 0;
                     margin-top: 25px;
-                    padding: 0 10px;
+                    padding: 0 8px;
+                    height: 192px;
                 }
             }
         }
