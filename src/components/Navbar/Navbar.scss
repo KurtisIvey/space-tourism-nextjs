@@ -1,4 +1,4 @@
-@import '../../variables.scss';
+@import "../../variables.scss";
 /* 
 navmenu openClose icon will need z index higher than slide out menu 
 there will be a div for the slide out menu with a bg filter to add blur of a higher px
@@ -17,23 +17,22 @@ nav {
         height: 40px;
         width: 40px;
         margin: 24px;
-        
     }
-    .hamburgerIcon{
+    .hamburgerIcon {
         cursor: pointer;
         height: 21px;
         width: 24px;
         margin: 24px;
         z-index: 6;
     }
-    .navMenuCloseIcon{
+    .navMenuCloseIcon {
         cursor: pointer;
         height: 24px;
         width: 24px;
         margin: 24px;
-        z-index: 6;  
+        z-index: 6;
     }
-    .navContainer{
+    .navContainer {
         display: none;
     }
     .slidingMenu {
@@ -43,17 +42,17 @@ nav {
         top: 0;
         height: 100vh;
         width: 254px;
-        
-        backdrop-filter: blur(44px); 
-        background-color: $darkGreyAlpha; 
-        transition: .8s;
+
+        backdrop-filter: blur(44px);
+        background-color: $darkGreyAlpha;
+        transition: 0.8s;
         z-index: 5;
-        
-        &.navbarOpen{
+
+        &.navbarOpen {
             right: 0px;
         }
-        ul{
-            font-family: 'Barlow Condensed', sans-serif;
+        ul {
+            font-family: "Barlow Condensed", sans-serif;
             list-style: none;
             display: flex;
             flex-direction: column;
@@ -61,7 +60,7 @@ nav {
             padding: 85px 35px;
             font-size: 16px;
 
-            li{
+            li {
                 position: relative;
                 margin: 15px 0;
                 width: fit-content;
@@ -69,12 +68,12 @@ nav {
                 display: grid;
                 grid-template-columns: 30px auto;
                 letter-spacing: 2px;
-                :first-child{
+                :first-child {
                     font-weight: 700;
                 }
             }
             li.activePage::after {
-                content: '';
+                content: "";
                 position: absolute;
                 left: 0;
                 top: 25px;
@@ -82,15 +81,15 @@ nav {
                 height: 3px;
                 background-color: rgb(255, 255, 255);
                 z-index: 15;
-              }
+            }
             li::after {
-                content: '';
+                content: "";
                 position: absolute;
                 left: 0;
                 top: 25px;
                 width: 0;
                 height: 2px;
-                background-color:#979797;
+                background-color: #979797;
                 transition: width 0.3s ease-in-out;
             }
             li:hover::after {
@@ -98,11 +97,10 @@ nav {
             }
         }
     }
-    
 }
 
 @media screen and (min-width: 768px) {
-    nav{
+    nav {
         align-items: normal;
         .navbarIcon {
             display: none;
@@ -112,36 +110,36 @@ nav {
             width: 48px;
             margin: 24px;
         }
-        .slidingMenu{
+        .slidingMenu {
             display: none;
         }
-        .navContainer{
+        .navContainer {
             display: flex;
             color: white;
-            backdrop-filter: blur(40px); 
-            background-color: rgba(102, 106, 131, 0.158); 
+            backdrop-filter: blur(40px);
+            background-color: rgba(102, 106, 131, 0.158);
             height: 96px;
             width: 450px;
             justify-content: center;
             align-items: center;
-            
-            ul{
-                font-family: 'Barlow Condensed', sans-serif;
+
+            ul {
+                font-family: "Barlow Condensed", sans-serif;
                 list-style: none;
                 font-size: 14px;
                 display: flex;
                 width: 100%;
                 justify-content: space-evenly;
-                  
-                  li  {
+
+                li {
                     position: relative;
                     text-decoration: none;
                     color: rgb(255, 255, 255);
                     transition: all 0.3s ease;
                     letter-spacing: 2.36px;
-                  }
-                  li.activePage::after {
-                    content: '';
+                }
+                li.activePage::after {
+                    content: "";
                     position: absolute;
                     left: 0;
                     bottom: -38px; /* Adjust the positioning of the line as needed */
@@ -149,62 +147,72 @@ nav {
                     height: 3px;
                     background-color: rgb(255, 255, 255);
                     z-index: 15;
-                  }
-                  
-                  li::after {
-                    content: '';
+                }
+
+                li::after {
+                    content: "";
                     position: absolute;
                     left: 0;
                     bottom: -38px;
                     width: 0;
                     height: 3px;
-                    background-color:#979797;
+                    background-color: #979797;
                     transition: width 0.3s ease;
-                  }
-                  
-                  li:hover::after {
+                }
+
+                li:hover::after {
                     width: 100%;
-                  }
+                }
             }
         }
     }
 }
 
 @media screen and (min-width: 1440px) {
-    nav{
+    nav {
         margin-top: 40px;
-        
+
         .logo {
             height: 48px;
             width: 48px;
             margin: 24px;
-            
+            margin-left: 50px;
+            z-index: 10;
         }
-        
-        .navContainer{
-            position: relative;
-            width: 830px;
-        
-            #randoLine{
-                border-color:#979797;
+
+        .rando-line-box {
+            width: 100%;
+            display: flex;
+            align-items: center;
+            position: relative; /* Add this to the container */
+
+            hr {
+                border-color: #979797;
                 position: absolute;
-                z-index: 16;
-                width: 493px;
-                left: -460px;
+                z-index: 1; /* Reduce the z-index so it's below the content */
+                width: 100%;
+                margin: 0;
+                right: -30px;
             }
-            ul{
+        }
+        .navContainer {
+            position: relative;
+            min-width: 830px;
+            display: flex;
+
+            ul {
                 font-size: 16px;
                 display: flex;
-                  li  {
+                li {
                     letter-spacing: 2.7px;
                     .largeResNavLink {
                         display: flex;
-                        :first-child{
+                        :first-child {
                             margin-right: 9.6px;
                             font-weight: 800;
                         }
                     }
-                  }
+                }
             }
         }
     }

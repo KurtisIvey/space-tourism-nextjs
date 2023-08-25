@@ -49,7 +49,7 @@ const Navbar = ({ activePage }: Props) => {
   }, []);
   return (
     <nav>
-      <Link href={"/"}>
+      <Link href={"/"} className="link-box">
         <Image className="logo" src={logo} alt="logo" />
       </Link>
       {/*
@@ -69,11 +69,16 @@ const Navbar = ({ activePage }: Props) => {
         easier to have two seperate navbars due to sliding window on mobile res. 
         ternary operator to display mobile navbar on lower res and tablet and larger on 768px+ width 
       */}
+      {windowWidth >= 1440 && (
+        <div className="rando-line-box">
+          <hr />
+        </div>
+      )}
       {windowWidth >= 768 ? (
         <div className="navContainer">
           {/* tablet and larger res navbar */}
           {/* rando line on desktop view */}
-          {windowWidth >= 1440 && <hr id="randoLine" />}
+
           <ul>
             <Link href={"/"} className="link">
               <li className={activePage === "home" ? "activePage" : ""}>

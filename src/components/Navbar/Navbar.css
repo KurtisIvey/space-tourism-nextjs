@@ -169,17 +169,27 @@ nav .slidingMenu ul li:hover::after {
     height: 48px;
     width: 48px;
     margin: 24px;
+    margin-left: 50px;
+    z-index: 10;
+  }
+  nav .rando-line-box {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    position: relative; /* Add this to the container */
+  }
+  nav .rando-line-box hr {
+    border-color: #979797;
+    position: absolute;
+    z-index: 1; /* Reduce the z-index so it's below the content */
+    width: 100%;
+    margin: 0;
+    right: -30px;
   }
   nav .navContainer {
     position: relative;
-    width: 830px;
-  }
-  nav .navContainer #randoLine {
-    border-color: #979797;
-    position: absolute;
-    z-index: 16;
-    width: 493px;
-    left: -460px;
+    min-width: 830px;
+    display: flex;
   }
   nav .navContainer ul {
     font-size: 16px;
