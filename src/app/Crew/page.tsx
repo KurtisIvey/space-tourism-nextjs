@@ -43,6 +43,7 @@ const Crew = (props: Props) => {
       <h1 className="pageTitle">
         <span>02</span> MEET YOUR CREW
       </h1>
+
       <section>
         <div className="imageContainer">
           {supportsWebp ? (

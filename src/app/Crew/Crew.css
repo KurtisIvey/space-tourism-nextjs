@@ -226,12 +226,11 @@ main.crew section div.detailsContainer div.textContainer p {
   }
   main.crew section {
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 70px auto 1fr;
+    grid-template-columns: 1fr 500px 637px 1fr;
+    grid-template-rows: 1fr 70px auto auto 1fr;
     align-items: flex-start;
-    justify-content: center;
     width: 100%;
-    max-width: 1440px;
+    max-width: 1137px;
     margin-top: 0;
     margin-left: auto;
     margin-right: auto;
@@ -239,26 +238,27 @@ main.crew section div.detailsContainer div.textContainer p {
   }
   main.crew section div.imageContainer {
     grid-row: 2/4;
-    grid-column: 2/3;
+    grid-column: 3/4;
     width: auto;
     height: 100%;
+    max-height: 620px;
     display: flex;
     align-self: flex-end;
     justify-content: center;
     padding-top: 0px;
   }
   main.crew section div.detailsContainer {
-    margin-left: auto;
-    margin-right: auto;
+    margin-left: 0;
+    margin-right: 0;
     grid-row: 3/4;
-    grid-column: 1/2;
+    grid-column: 2/3;
     height: auto;
     display: flex;
     flex-direction: column-reverse;
     justify-content: center;
     align-items: start;
     justify-self: center;
-    padding-left: 55px;
+    margin-left: -30px;
   }
   main.crew section div.detailsContainer ul {
     list-style: none;
@@ -309,8 +309,10 @@ main.crew section div.detailsContainer div.textContainer p {
     line-height: 35px;
     margin-top: 220px;
   }
-  main.crew section div.detailsContainer.douglas, main.crew section div.detailsContainer.mark,
-  main.crew section div.detailsContainer.victor, main.crew section div.detailsContainer.ano {
+  main.crew section div.detailsContainer.douglas,
+  main.crew section div.detailsContainer.mark,
+  main.crew section div.detailsContainer.victor,
+  main.crew section div.detailsContainer.ano {
     width: 444px;
   }
 }/*# sourceMappingURL=Crew.css.map */
