@@ -1,56 +1,58 @@
-@import '../../variables';
+@import "../../variables";
 
 main.destination {
-    font-family: 'Barlow Condensed', sans-serif;
+    font-family: "Barlow Condensed", sans-serif;
     box-sizing: border-box;
     height: 100vh;
     width: 100%;
     overflow-x: hidden;
-    background-image: url('../../assets/destination/background-destination-mobile.jpg');
+    background-image: url("../../assets/destination/background-destination-mobile.jpg");
     background-size: cover;
     background-position: center;
     display: grid;
     grid-template-rows: auto 1fr;
     position: relative;
-    
+
     h1.pageTitle {
         position: absolute;
+        width: 100%;
         left: 50%;
+        text-align: center;
         transform: translate(-50%, -50%);
-        top: 88px;
+        top: 100px;
         font-weight: 400;
         font-size: 16px;
         letter-spacing: 2.7px;
-        color: white;  
-            span{
-                font-weight: 700;
-                color: $darkGrey;
-                margin-right: 10px;
-                }   
+        color: white;
+        span {
+            font-weight: 700;
+            color: $darkGrey;
+            margin-right: 10px;
+        }
     }
-    
+
     section {
         max-width: 768px;
-        margin: 0 auto;
+        margin: 50px auto 0 auto;
         color: white;
         display: flex;
         flex-direction: column;
         text-align: center;
         justify-content: center;
         align-items: center;
-        
-        .planetImage{
+
+        .planetImage {
             width: 170px;
             height: 170px;
             margin-bottom: 25px;
         }
-        .descriptorsContainer{
+        .descriptorsContainer {
             display: flex;
             flex-direction: column;
             align-items: center;
             justify-content: center;
         }
-        ul{
+        ul {
             list-style: none;
             display: flex;
             flex-direction: row;
@@ -58,14 +60,14 @@ main.destination {
             font-size: 14px;
             letter-spacing: 2.36px;
             margin-bottom: 30px;
-            
-            li{
+
+            li {
                 cursor: pointer;
                 position: relative;
             }
 
             li.activePlanet::after {
-                content: '';
+                content: "";
                 position: absolute;
                 left: 0;
                 top: 25px;
@@ -73,49 +75,49 @@ main.destination {
                 height: 3px;
                 background-color: rgb(255, 255, 255);
                 z-index: 15;
-              }
+            }
             li::after {
-                content: '';
+                content: "";
                 position: absolute;
                 left: 0;
                 top: 25px;
                 width: 0;
                 height: 3px;
-                background-color:#979797;
+                background-color: #979797;
                 transition: width 0.3s ease-in-out;
             }
             li:hover::after {
                 width: 100%;
             }
         }
-        h2{
-            font-family: 'Bellefair', serif;
+        h2 {
+            font-family: "Bellefair", serif;
             font-weight: 300;
             font-size: 56px;
             text-transform: uppercase;
             margin-bottom: 0;
         }
-        p{
+        p {
             width: 327px;
             height: 125px;
-            font-family: 'Barlow', sans-serif;
+            font-family: "Barlow", sans-serif;
             font-size: 15px;
             font-weight: 200;
             line-height: 23px;
         }
-        
+
         .metricsBigContainer {
             display: flex;
             flex-direction: column;
-            border-top: .2px solid $darkGreyAlpha;
-            padding-top:  31px;
+            border-top: 0.2px solid $darkGreyAlpha;
+            padding-top: 31px;
             margin-top: 20px;
             .metricContainer {
                 width: 216px;
                 height: 61px;
                 margin-bottom: 32px;
-                h3{
-                    font-family: 'Barlow Condensed', sans-serif;
+                h3 {
+                    font-family: "Barlow Condensed", sans-serif;
                     font-weight: 300;
                     margin: 0;
                     margin-bottom: 12px;
@@ -123,28 +125,28 @@ main.destination {
                     font-size: 14px;
                     letter-spacing: 2.36px;
                 }
-                div{
+                div {
                     font-size: 28px;
-                    font-family: 'Bellefair', serif;
+                    font-family: "Bellefair", serif;
                     text-transform: uppercase;
                     font-weight: 300;
                 }
             }
         }
-        
     }
-    
 }
-
 
 @media screen and (min-width: 768px) {
     main.destination {
-        background-image: url('../../assets/destination/background-destination-tablet.jpg'); 
+        background-image: url("../../assets/destination/background-destination-tablet.jpg");
         display: grid;
         grid-template-rows: auto 1fr;
         align-items: flex-start;
-        
+
         h1.pageTitle {
+            width: auto;
+            left: 50%;
+            text-align: start;
             position: absolute;
             left: 38.5px;
             transform: none;
@@ -152,12 +154,12 @@ main.destination {
             font-weight: 400;
             font-size: 20px;
             letter-spacing: 3.38px;
-            color: white;  
-                span{
-                    font-weight: 700;
-                    color: $darkGrey;
-                    margin-right: 10px;
-                    }   
+            color: white;
+            span {
+                font-weight: 700;
+                color: $darkGrey;
+                margin-right: 10px;
+            }
         }
         section {
             height: 100%;
@@ -166,42 +168,42 @@ main.destination {
             flex-direction: column;
             justify-content: center;
             align-items: center;
-            
-            .planetImage{
+
+            .planetImage {
                 width: 300px;
                 height: 300px;
                 margin-bottom: 50px;
             }
-            .descriptorsContainer{
-                ul{
+            .descriptorsContainer {
+                ul {
                     gap: 20px;
                     font-size: 16px;
                     letter-spacing: 2.7px;
                     margin-bottom: 40px;
                 }
-                h2{
+                h2 {
                     font-weight: 300;
                     font-size: 80px;
                     margin-bottom: 15px;
                 }
-                p{
+                p {
                     width: 573px;
                     height: 125px;
                     font-size: 16px;
                     font-weight: 300;
                     line-height: 25px;
                 }
-                
+
                 .metricsBigContainer {
                     display: flex;
                     flex-direction: row;
-                    padding-top:  31px;
+                    padding-top: 31px;
                     margin-top: 0;
                     .metricContainer {
                         width: 216px;
                         height: 61px;
                         margin-bottom: 0;
-                        h3{
+                        h3 {
                             font-weight: 300;
                             margin: 0;
                             margin-bottom: 12px;
@@ -209,28 +211,28 @@ main.destination {
                             font-size: 14px;
                             letter-spacing: 2.36px;
                         }
-                        div{
+                        div {
                             font-size: 28px;
                             font-weight: 300;
                         }
                     }
                 }
-            }    
-        }   
+            }
+        }
     }
 }
 
 @media screen and (min-width: 1440px) {
     main.destination {
-        font-family: 'Barlow Condensed', sans-serif;
+        font-family: "Barlow Condensed", sans-serif;
         box-sizing: border-box;
         height: 100vh;
         width: 100%;
-        background-image: url('../../assets/destination/background-destination-desktop.jpg'); 
+        background-image: url("../../assets/destination/background-destination-desktop.jpg");
         display: grid;
         grid-template-rows: auto 1fr;
         align-items: center;
-        
+
         h1.pageTitle {
             position: absolute;
             left: 166.5px;
@@ -239,12 +241,12 @@ main.destination {
             font-weight: 400;
             font-size: 28px;
             letter-spacing: 4.72px;
-            color: white;  
-                span{
-                    font-weight: 700;
-                    color: $darkGrey;
-                    margin-right: 10px;
-                    }   
+            color: white;
+            span {
+                font-weight: 700;
+                color: $darkGrey;
+                margin-right: 10px;
+            }
         }
         section {
             width: 100%;
@@ -253,12 +255,12 @@ main.destination {
             margin: 0 auto;
             display: grid;
             grid-template-columns: 1fr 1fr;
-            grid-template-rows: .13fr 1fr;
+            grid-template-rows: 0.13fr 1fr;
             justify-content: center;
             align-items: center;
             position: relative;
-            
-            .planetImage{
+
+            .planetImage {
                 grid-row: 2 / 3;
                 grid-column: 1 / 2;
                 justify-self: center;
@@ -268,8 +270,8 @@ main.destination {
                 margin-left: 180px;
                 margin-right: 0;
             }
-            
-            .descriptorsContainer{
+
+            .descriptorsContainer {
                 flex-direction: column;
                 align-items: flex-start;
                 justify-content: space-between;
@@ -278,21 +280,22 @@ main.destination {
                 width: 445px;
                 height: 472px;
                 margin-left: 110px;
-                
-                ul{
+
+                ul {
                     margin-bottom: 15px;
                     li.activePlanet::after {
-                        top: 30px;}
+                        top: 30px;
+                    }
                     li::after {
                         top: 30px;
                     }
                 }
-                h2{
+                h2 {
                     font-weight: 300;
                     font-size: 100px;
                     margin-bottom: 0px;
                 }
-                p{
+                p {
                     text-align: start;
                     width: 100%;
                     font-size: 18px;
@@ -301,18 +304,18 @@ main.destination {
                     margin-top: -20px;
                     margin-bottom: 15px;
                 }
-                
+
                 .metricsBigContainer {
                     text-align: start;
                     display: flex;
                     flex-direction: row;
-                    padding-top:  31px;
+                    padding-top: 31px;
                     margin-top: 0;
                     .metricContainer {
                         width: 216px;
                         height: 61px;
                         margin-bottom: 0;
-                        h3{
+                        h3 {
                             font-weight: 300;
                             margin: 0;
                             margin-bottom: 0px;
@@ -320,13 +323,13 @@ main.destination {
                             font-size: 14px;
                             letter-spacing: 2.36px;
                         }
-                        div{
+                        div {
                             font-size: 28px;
                             font-weight: 300;
                         }
                     }
                 }
-            }    
-        }   
+            }
+        }
     }
 }

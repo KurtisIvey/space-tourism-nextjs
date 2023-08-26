@@ -13,9 +13,11 @@ main.destination {
 }
 main.destination h1.pageTitle {
   position: absolute;
+  width: 100%;
   left: 50%;
+  text-align: center;
   transform: translate(-50%, -50%);
-  top: 88px;
+  top: 100px;
   font-weight: 400;
   font-size: 16px;
   letter-spacing: 2.7px;
@@ -28,7 +30,7 @@ main.destination h1.pageTitle span {
 }
 main.destination section {
   max-width: 768px;
-  margin: 0 auto;
+  margin: 50px auto 0 auto;
   color: white;
   display: flex;
   flex-direction: column;
@@ -134,6 +136,9 @@ main.destination section .metricsBigContainer .metricContainer div {
     align-items: flex-start;
   }
   main.destination h1.pageTitle {
+    width: auto;
+    left: 50%;
+    text-align: start;
     position: absolute;
     left: 38.5px;
     transform: none;
